@@ -31,7 +31,7 @@ export default function Header() {
         <nav className="nav-group nav-right desktop-only">
           <Link href="#" className="nav-link">Gallery</Link>
           <Link href="#" className="nav-link">Contact</Link>
-          <Link href="https://wa.link/pjquhk" className="btn-primary">BOOK APPOINTMENT</Link>
+          <Link href="https://wa.link/xvmbyd" className="btn-primary">BOOK APPOINTMENT</Link>
         </nav>
 
         {/* Mobile Toggle Button */}
@@ -55,7 +55,7 @@ export default function Header() {
           <Link href="#" className="mobile-link" onClick={toggleMenu}>About</Link>
           <Link href="#" className="mobile-link" onClick={toggleMenu}>Gallery</Link>
           <Link href="#" className="mobile-link" onClick={toggleMenu}>Contact</Link>
-          <Link href="https://wa.link/pjquhk" className="btn-primary" onClick={toggleMenu}>BOOK APPOINTMENT</Link>
+          <Link href="https://wa.link/xvmbyd" className="btn-primary" onClick={toggleMenu}>BOOK APPOINTMENT</Link>
         </nav>
       </div>
     </header>

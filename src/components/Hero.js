@@ -30,7 +30,7 @@ export default function Hero() {
           </p>
           
           <div className="hero-buttons">
-            <Link href="https://wa.link/pjquhk" className="btn-primary">
+            <Link href="https://wa.link/xvmbyd" className="btn-primary">
               BOOK APPOINTMENT
             </Link>
             <Link href="#" className="btn-secondary">

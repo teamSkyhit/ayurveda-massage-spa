@@ -166,7 +166,7 @@ export default function About() {
             Ayurveda began with a simple idea — that everyone deserves an hour of genuine quiet. Our rooms are warm and softly lit, our oils are chosen with care, and every session is shaped around how you'd like to feel that day. <br /> From the moment you arrive, our therapists take the time to listen. Pressure, pace and focus are adjusted to your comfort, so you can settle in, breathe slowly and leave feeling looked after.
           </p>
           
-          <Link href="https://wa.link/pjquhk" className="btn-primary" style={{ marginTop: '1rem', display: 'inline-block' }}>
+          <Link href="https://wa.link/xvmbyd" className="btn-primary" style={{ marginTop: '1rem', display: 'inline-block' }}>
             More About Us
           </Link>
         </div>

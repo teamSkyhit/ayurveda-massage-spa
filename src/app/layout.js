@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <a 
-          href="https://wa.link/pjquhk" 
+          href="https://wa.link/xvmbyd" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="whatsapp-float"

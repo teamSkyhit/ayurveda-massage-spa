@@ -389,6 +389,12 @@
   .serviceCard {
     width: 100%; /* 1 column */
   }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  
 }
 
 /* Booking Section */
