@@ -12,6 +12,8 @@ const outfit = Outfit({
 const saudagar = localFont({
   src: "../fonts/Saudagar.ttf",
   variable: "--font-saudagar",
+  adjustFontFallback: false,
+  fallback: ['serif'],
 });
 
 export const metadata = {
