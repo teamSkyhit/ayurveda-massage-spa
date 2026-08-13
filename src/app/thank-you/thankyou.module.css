@@ -1,0 +1,91 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbf9f4;
+  font-family: var(--font-outfit), sans-serif;
+  padding: 2rem;
+}
+
+.content {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.title {
+  font-family: var(--font-saudagar), serif;
+  font-size: 3rem;
+  color: #113f23;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+.logoWrapper {
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 250px;
+  height: auto;
+}
+
+.teamMessage,
+.socialMessage {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #113f23;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.socialMessage {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.socialIcon {
+  color: #113f23;
+  transition: transform 0.2s ease, color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialIcon:hover {
+  transform: translateY(-3px);
+  color: #c39c6b;
+}
+
+.backHome {
+  margin-top: 2rem;
+}
+
+.homeLink {
+  display: inline-block;
+  color: #c39c6b;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.homeLink:hover {
+  color: #113f23;
+}

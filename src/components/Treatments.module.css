@@ -1,0 +1,147 @@
+.treatmentsGridNew {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.treatmentCardNew {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #000;
+}
+
+.tCardBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+
+.tCardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,0.85) 100%);
+  transition: background 0.5s ease;
+  z-index: 2;
+}
+
+.treatmentCardNew:hover .tCardBg {
+  transform: scale(1.05);
+}
+
+.treatmentCardNew:hover .tCardOverlay {
+  background: rgba(166, 114, 53, 0.85);
+}
+
+.tCardContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+  z-index: 3;
+}
+
+.tCardTop {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2.5rem;
+  right: 2.5rem;
+  transform: translateY(0);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.treatmentCardNew:hover .tCardTop {
+  transform: translateY(-220px);
+}
+
+.tCardIcon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+  stroke: #fff;
+}
+
+.tCardTitle {
+  font-family: var(--font-saudagar), serif;
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.tCardSubtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.tCardBottom {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2.5rem;
+  right: 2.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.treatmentCardNew:hover .tCardBottom {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tCardDesc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.tCardBtn {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.tCardBtn:hover {
+  background: #fff;
+  color: #333;
+}
+
+@media (max-width: 1024px) {
+  .treatmentsGridNew {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .treatmentsGridNew {
+    grid-template-columns: 1fr;
+  }
+}
