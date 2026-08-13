@@ -125,7 +125,7 @@ export default function About() {
         {/* Left Side: Image */}
         <div className={`about-image-wrapper ${isVisible ? 'slide-up-fade' : 'opacity-0'}`}>
           <img 
-            src="/ayurveda-massage-spa-02.webp" 
+            src="https://slategrey-bee-869726.hostingersite.com/images/affordable-massage-cdo.webp" 
             alt="Warm beautifully lit massage room" 
             className="about-main-img" 
           />

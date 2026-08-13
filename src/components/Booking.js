@@ -60,8 +60,8 @@ export default function Booking() {
         {/* Left Image */}
         <div className="booking-image-wrapper">
           <img 
-            src="/ayurveda-massage-spa-02.webp" 
-            alt="Relaxing Spa Atmosphere" 
+            src="/affordable-massage-cdo.webp" 
+            alt="Warm inviting massage setting" 
             className="booking-image" 
           />
         </div>

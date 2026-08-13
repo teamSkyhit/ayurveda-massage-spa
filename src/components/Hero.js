@@ -52,18 +52,18 @@ export default function Hero() {
         {/* Right Side: Image */}
         <div className={`hero-image-wrapper ${isLoaded ? 'fade-in-right' : ''}`}>
           <img 
-            src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-corner.png" 
+            src="https://slategrey-bee-869726.hostingersite.com/images/affordable-massage-cagayan-de-oro.png" 
             alt="Corner Decor" 
             className="hero-corner-img" 
           />
           <img 
-            src="/hero-img.webp" 
-            alt="Relaxing Spa Massage" 
+            src="https://slategrey-bee-869726.hostingersite.com/images/cheap-massage-cdo.webp" 
+            alt="cheap massage cdo" 
             className="hero-main-img" 
           />
           
           <img 
-            src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-hero-corner.png" 
+            src="https://slategrey-bee-869726.hostingersite.com/images/cheap-massage-near-me.png" 
             alt="Essential Oil Bottle" 
             className="hero-bottle-img float-animation" 
           />

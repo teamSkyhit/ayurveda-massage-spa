@@ -3,6 +3,13 @@ import styles from './styles.module.css';
 import ReviewsCarousel from './ReviewsCarousel';
 import BookingForm from './BookingForm';
 import ServicesImageCarousel from './ServicesImageCarousel';
+import LandingSeoAccordion from '../../components/LandingSeoAccordion';
+
+export const metadata = {
+  title: "Massage in Cagayan de Oro From ₱400 | Ayurveda Massage & Spa",
+  description: "Book a massage in Cagayan de Oro from ₱400. Choose Swedish, Thai, Ayurvedic, deep tissue, hot stone and more at Ayurveda Massage & Spa.",
+  keywords: "massage in cagayan de oro, massage cdo, massage spa cdo, massage spa in cagayan de oro, massage near me, swedish massage cagayan de oro, thai massage cagayan de oro, deep tissue massage cagayan de oro, ayurvedic massage cagayan de oro, hot stone massage cagayan de oro, home massage cagayan de oro, hotel massage cagayan de oro",
+};
 
 export default function FullBodyThaiMassageNearMe() {
   return (
@@ -345,8 +352,8 @@ export default function FullBodyThaiMassageNearMe() {
           <div className={styles.infoCol}>
             <h3 className={styles.infoColTitle}>Inside Ayurveda<br/>Massage & Spa</h3>
             <div className={styles.spaGallery}>
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/deep-tissue-massage-near-me.webp" alt="Spa interior 1" className={styles.spaGalleryImg} />
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/massage-in-cdo.webp" alt="Spa interior 2" className={styles.spaGalleryImg} />
+              <img src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-gallery-img-01.webp" alt="Spa interior 1" className={styles.spaGalleryImg} />
+              <img src="https://slategrey-bee-869726.hostingersite.com/images/ayurvedic-massage-near-me.webp" alt="Spa interior 2" className={styles.spaGalleryImg} />
               <img src="https://slategrey-bee-869726.hostingersite.com/images/hot-stone-massage-near-me.webp" alt="Spa interior 3" className={styles.spaGalleryImg} />
               <img src="https://slategrey-bee-869726.hostingersite.com/images/massage-spa-near-me.webp" alt="Spa interior 4" className={styles.spaGalleryImg} />
               <img src="https://slategrey-bee-869726.hostingersite.com/images/cdo-massage.webp" alt="Spa interior 5" className={styles.spaGalleryImg} />
@@ -441,6 +448,7 @@ export default function FullBodyThaiMassageNearMe() {
         </div>
       </section>
 
+      <LandingSeoAccordion />
     </main>
   );
 }
