@@ -344,6 +344,8 @@ export default function FullBodyThaiMassageNearMe() {
         <ServicesImageCarousel />
       </section>
 
+      <LandingSeoAccordion />
+
       {/* 6. Info Section */}
       <section className={styles.infoSection}>
         <div className={styles.infoGrid}>
@@ -447,8 +449,6 @@ export default function FullBodyThaiMassageNearMe() {
           </a>
         </div>
       </section>
-
-      <LandingSeoAccordion />
     </main>
   );
 }
