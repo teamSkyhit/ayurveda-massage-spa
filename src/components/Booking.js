@@ -26,32 +26,94 @@ export default function Booking() {
     return () => observer.disconnect();
   }, []);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setStatus('Booking...');
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+  //   setStatus('Booking...');
 
-    // Provided EmailJS IDs
-    const serviceID = 'service_i2h82eb';
-    const templateID = 'template_bxgdgga';
-    const publicKey = 'hjLXq5MC66R977QFn';
+  //   // Provided EmailJS IDs
+  //   const serviceID = 'service_i2h82eb';
+  //   const templateID = 'template_bxgdgga';
+  //   const publicKey = 'hjLXq5MC66R977QFn';
 
-    emailjs.init(publicKey);
+  //   emailjs.init(publicKey);
 
-    emailjs
-      .sendForm(serviceID, templateID, form.current, {
+  //   emailjs
+  //     .sendForm(serviceID, templateID, form.current, {
+  //       publicKey: publicKey,
+  //     })
+  //     .then(
+  //       () => {
+  //         setStatus('Booking request sent successfully!');
+  //         form.current.reset();
+  //         window.location.href = '/thank-you';
+  //       },
+  //       (error) => {
+  //         setStatus(`Failed to send request. Please try again. (${error.text})`);
+  //       },
+  //     );
+  // };
+
+  const sendEmail = async (e) => {
+  e.preventDefault();
+  setStatus('Booking...');
+
+  const serviceID = 'service_i2h82eb';
+  const templateID = 'template_bxgdgga';
+  const publicKey = 'hjLXq5MC66R977QFn';
+
+  // Your Google Apps Script Web App URL
+  const googleSheetURL = 'https://script.google.com/macros/s/AKfycbxFCo2rk-3tVAohd134xTJAwSyNmme_W2CSmtNGeYXvNUKICoF0DRKcrMo9Tz42YSiy/exec';
+
+  emailjs.init(publicKey);
+
+  try {
+    // 1. Send email using EmailJS
+    await emailjs.sendForm(
+      serviceID,
+      templateID,
+      form.current,
+      {
         publicKey: publicKey,
-      })
-      .then(
-        () => {
-          setStatus('Booking request sent successfully!');
-          form.current.reset();
-          window.location.href = '/thank-you';
-        },
-        (error) => {
-          setStatus(`Failed to send request. Please try again. (${error.text})`);
-        },
-      );
-  };
+      }
+    );
+
+    // 2. Get form values
+    const formData = new FormData(form.current);
+
+    const data = {
+      from_name: formData.get('from_name'),
+      mobile_number: formData.get('mobile_number'),
+      user_email: formData.get('user_email'),
+      treatment: formData.get('treatment'),
+      message: formData.get('message'),
+      page_url: formData.get('page_url'),
+    };
+
+    // 3. Send data to Google Sheet
+    await fetch(googleSheetURL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'text/plain;charset=utf-8',
+      },
+      body: JSON.stringify(data),
+    });
+
+    // 4. Success
+    setStatus('Booking request sent successfully!');
+
+    form.current.reset();
+
+    window.location.href = '/thank-you';
+
+  } catch (error) {
+    console.error(error);
+
+    setStatus(
+      `Failed to send request. Please try again. (${error.text || error.message})`
+    );
+  }
+};
 
   return (
     <section className="booking-section" ref={sectionRef} id="book">
@@ -63,6 +125,9 @@ export default function Booking() {
             src="https://ayurvedaspa.ph/images/affordable-massage-cdo.webp" 
             alt="thai massage spa near me" 
             className="booking-image" 
+            loading="lazy"
+            width="450"
+            height="528"
           />
         </div>
 
@@ -73,6 +138,9 @@ export default function Booking() {
               src="https://ayurvedaspa.ph/images/ayurveda-massage-spa-lotus.gif" 
               alt="thai spa" 
               className="booking-lotus" 
+              loading="lazy"
+              width="100"
+              height="100"
             />
             <h2 className="booking-title">Book an Appointment</h2>
             <p className="booking-subtitle">

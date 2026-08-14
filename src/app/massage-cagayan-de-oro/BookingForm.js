@@ -25,37 +25,112 @@ export default function BookingForm() {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
     
-    // Provided EmailJS Keys
-    const SERVICE_ID = 'service_i2h82eb';
-    const TEMPLATE_ID = 'template_bxgdgga';
-    const PUBLIC_KEY = 'hjLXq5MC66R977QFn';
+  //   // Provided EmailJS Keys
+  //   const SERVICE_ID = 'service_i2h82eb';
+  //   const TEMPLATE_ID = 'template_bxgdgga';
+  //   const PUBLIC_KEY = 'hjLXq5MC66R977QFn';
 
-    setStatus({ submitting: true, success: false, error: null });
+  //   setStatus({ submitting: true, success: false, error: null });
 
-    emailjs.init("hjLXq5MC66R977QFn");
+  //   emailjs.init("hjLXq5MC66R977QFn");
 
-    const templateParams = {
-      from_name: formData.name,
-      mobile_number: formData.mobile,
-      treatment: formData.treatment,
-      message: formData.message,
-      page_url: window.location.href,
-    };
+  //   const templateParams = {
+  //     from_name: formData.name,
+  //     mobile_number: formData.mobile,
+  //     treatment: formData.treatment,
+  //     message: formData.message,
+  //     page_url: window.location.href,
+  //   };
 
-    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        setStatus({ submitting: false, success: true, error: null });
-        setFormData({ name: '', mobile: '', treatment: '', message: '' }); // Reset form
-        window.location.href = '/thank-you';
-      }, (error) => {
-        console.log('FAILED...', error);
-        setStatus({ submitting: false, success: false, error: error.text });
-      });
+  //   emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+  //     .then((response) => {
+  //       console.log('SUCCESS!', response.status, response.text);
+  //       setStatus({ submitting: false, success: true, error: null });
+  //       setFormData({ name: '', mobile: '', treatment: '', message: '' }); // Reset form
+  //       window.location.href = '/thank-you';
+  //     }, (error) => {
+  //       console.log('FAILED...', error);
+  //       setStatus({ submitting: false, success: false, error: error.text });
+  //     });
+  // };
+
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const SERVICE_ID = 'service_i2h82eb';
+  const TEMPLATE_ID = 'template_bxgdgga';
+  const PUBLIC_KEY = 'hjLXq5MC66R977QFn';
+
+  // Paste your Google Apps Script Web App URL here
+  const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbxFCo2rk-3tVAohd134xTJAwSyNmme_W2CSmtNGeYXvNUKICoF0DRKcrMo9Tz42YSiy/exec';
+
+  setStatus({
+    submitting: true,
+    success: false,
+    error: null
+  });
+
+  emailjs.init(PUBLIC_KEY);
+
+  const templateParams = {
+    from_name: formData.name,
+    mobile_number: formData.mobile,
+    treatment: formData.treatment,
+    message: formData.message,
+    page_url: window.location.href,
   };
+
+  try {
+    // 1. Send to EmailJS
+    const response = await emailjs.send(
+      SERVICE_ID,
+      TEMPLATE_ID,
+      templateParams,
+      PUBLIC_KEY
+    );
+
+    console.log('EmailJS SUCCESS!', response.status, response.text);
+
+    // 2. Send to Google Sheet
+    await fetch(GOOGLE_SHEET_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'text/plain;charset=utf-8',
+      },
+      body: JSON.stringify(templateParams),
+    });
+
+    // 3. Success
+    setStatus({
+      submitting: false,
+      success: true,
+      error: null
+    });
+
+    setFormData({
+      name: '',
+      mobile: '',
+      treatment: '',
+      message: ''
+    });
+
+    // Redirect after successful submission
+    window.location.href = '/thank-you';
+
+  } catch (error) {
+    console.log('FAILED...', error);
+
+    setStatus({
+      submitting: false,
+      success: false,
+      error: error.text || error.message || 'Something went wrong'
+    });
+  }
+};
 
   return (
     <form className={styles.bookingForm} onSubmit={handleSubmit}>

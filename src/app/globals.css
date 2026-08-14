@@ -23,7 +23,7 @@ body {
   flex-direction: column;
   color: var(--text-primary);
   background-color: var(--bg-color);
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-poppins), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -215,7 +215,7 @@ a {
 }
 
 .hero-title-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-poppins), sans-serif;
   color: var(--primary-green);
   font-weight: 300;
 }

@@ -370,7 +370,7 @@ export default function FullBodyThaiMassageNearMe() {
               <p style={{ marginBottom: '1rem' }}>#45 Justo Gaerlan Street,<br/>Cagayan de Oro City,<br/>Philippines</p>
               <p style={{ fontWeight: '500' }}>Open Daily<br/>11:00 AM – 3:00 AM</p>
             </div>
-            <a href="https://share.google/2OuAU5x8vUi2EBHoD" target="_blank" rel="noopener noreferrer" className={styles.btnSolidGold}>GET DIRECTIONS</a>
+            <a href="https://maps.app.goo.gl/VpmAnNj36gf2QcMH8" target="_blank" rel="noopener noreferrer" className={styles.btnSolidGold}>GET DIRECTIONS</a>
             
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.240932710234!2d124.6434375!3d8.475937499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fff3c299251741%3A0xb814190f40bab755!2sAyurveda%20Massage%20and%20Spa%20CDO!5e0!3m2!1sen!2sin!4v1786612891471!5m2!1sen!2sin" 

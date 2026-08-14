@@ -162,7 +162,7 @@ export default function Treatments() {
         }
       `}} />
       <div className="treatments-bg-overlay" style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', opacity: 0.05, pointerEvents: 'none' }}>
-        <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-hero-bg-flower.png" alt="cdo massage" className="treatments-bg-flower" style={{ width: '800px', height: 'auto' }} />
+        <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-hero-bg-flower.png" alt="cdo massage" className="treatments-bg-flower" width="800" height="800" loading="lazy" style={{ width: '800px', height: 'auto' }} />
       </div>
 
       <div className="treatments-header" style={{ position: 'relative', zIndex: 10 }}>
@@ -206,6 +206,9 @@ export default function Treatments() {
                 src={card.img} 
                 alt={card.title} 
                 className="t-card-bg" 
+                loading="lazy"
+                width="600"
+                height="400"
                 style={{ 
                   position: 'absolute', 
                   top: 0, 
@@ -248,7 +251,7 @@ export default function Treatments() {
                 }}
               >
                 <div className="t-card-top" style={{ transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)', flexShrink: 0 }}>
-                  <img src={card.icon} alt={`${card.title} icon`} className="t-card-icon" style={{ width: '50px', height: '50px', marginBottom: '1rem', objectFit: 'contain' }} />
+                  <img src={card.icon} alt={`${card.title} icon`} className="t-card-icon" loading="lazy" width="88" height="88" style={{ width: '50px', height: '50px', marginBottom: '1rem', objectFit: 'contain' }} />
                   <h3 className="t-card-title" style={{ fontFamily: 'var(--font-saudagar), serif', fontSize: '2rem', marginBottom: '0.5rem', lineHeight: 1.1 }}>{card.title}</h3>
                   <p className="t-card-subtitle" style={{ fontSize: '1rem', opacity: 0.9 }}>Restore the skills to rebuild the life</p>
                 </div>

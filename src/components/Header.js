@@ -23,7 +23,7 @@ export default function Header() {
         {/* Center/Left Logo */}
         <div className="logo-container">
           <Link href="/">
-            <img src="https://ayurvedaspa.ph/images/ayurveda-massage-and--spa-logo.png" alt="massage under 500 cdo" className="logo" />
+            <img src="https://ayurvedaspa.ph/images/ayurveda-massage-and--spa-logo.png" alt="massage under 500 cdo" className="logo" width="135" height="80" />
           </Link>
         </div>
 

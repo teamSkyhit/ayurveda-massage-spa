@@ -118,6 +118,9 @@ export default function About() {
             src="https://ayurvedaspa.ph/images/ayurveda-massage-spa-bg.png" 
             alt="full body thai massage near me" 
             className="about-bg-flower" 
+            loading="lazy"
+            width="600"
+            height="600"
             style={{ transition: 'transform 0.1s ease-out' }}
           />
         </div>
@@ -128,10 +131,16 @@ export default function About() {
             src="https://ayurvedaspa.ph/images/affordable-massage-cdo.webp" 
             alt="home service massage cdo" 
             className="about-main-img" 
+            loading="lazy"
+            width="450"
+            height="528"
           />
           <img 
             src="https://ayurvedaspa.ph/images/ayurveda-massage-spa-about-icon.png" 
             alt="massage home service cdo" 
+            loading="lazy"
+            width="150"
+            height="438"
             style={{
               position: 'absolute',
               top: '50%',
@@ -145,6 +154,9 @@ export default function About() {
           <img 
             src="https://ayurvedaspa.ph/images/ayurveda-massage-spa-bg-stone-flower.png" 
             alt="massage at home cdo" 
+            loading="lazy"
+            width="250"
+            height="160"
             style={{
               position: 'absolute',
               bottom: '-30px',

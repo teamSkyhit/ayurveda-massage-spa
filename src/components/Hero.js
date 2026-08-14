@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section className="hero-section">
       <div className="hero-bg-overlay">
-        <img src="https://ayurvedaspa.ph/images/ayurveda-massage-flower-img.png" alt="affordable massage cdo" className="hero-bg-flower" />
+        <img src="https://ayurvedaspa.ph/images/ayurveda-massage-flower-img.png" alt="affordable massage cdo" className="hero-bg-flower" fetchPriority="high" width="500" height="500" />
       </div>
 
       <div className="hero-container">
@@ -33,7 +33,7 @@ export default function Hero() {
             <Link href="https://wa.link/xvmbyd" className="btn-primary">
               BOOK APPOINTMENT
             </Link>
-            <Link href="#" className="btn-secondary">
+            <Link href="/massage-cagayan-de-oro" className="btn-secondary">
               EXPLORE SERVICES
             </Link>
           </div>
@@ -55,17 +55,26 @@ export default function Hero() {
             src="https://ayurvedaspa.ph/images/affordable-massage-cagayan-de-oro.png" 
             alt="affordable massage cagayan de oro" 
             className="hero-corner-img" 
+            width="245" 
+            height="280" 
+            fetchPriority="high"
           />
           <img 
             src="https://ayurvedaspa.ph/images/cheap-massage-cdo.webp" 
             alt="cheap massage near me" 
             className="hero-main-img" 
+            width="450" 
+            height="528" 
+            fetchPriority="high"
           />
           
           <img 
             src="https://ayurvedaspa.ph/images/cheap-massage-near-me.png" 
             alt="affordable spa cdo" 
             className="hero-bottle-img float-animation" 
+            width="250" 
+            height="211" 
+            fetchPriority="high"
           />
         </div>
       </div>

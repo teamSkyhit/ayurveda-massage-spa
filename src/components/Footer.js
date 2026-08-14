@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="main-footer">
       <div className="footer-bg-overlay">
-        <img src="https://ayurvedaspa.ph/images/ayurveda-massage-flower-img.png" alt="massage 400 cdo" className="footer-bg-flower" />
+        <img src="https://ayurvedaspa.ph/images/ayurveda-massage-flower-img.png" alt="massage 400 cdo" className="footer-bg-flower" width="500" height="500" loading="lazy" />
       </div>
       
       <div className="footer-container">
@@ -12,7 +12,7 @@ export default function Footer() {
         {/* Column 1: Logo & Info */}
         <div className="footer-col footer-col-info">
           <Link href="/">
-            <img src="https://ayurvedaspa.ph/images/ayurveda-massage-and--spa-logo.png" alt="thai masssage" className="footer-logo" />
+            <img src="https://ayurvedaspa.ph/images/ayurveda-massage-and--spa-logo.png" alt="thai masssage" className="footer-logo" width="135" height="80" loading="lazy" />
           </Link>
           <p className="footer-text">
             Restore your body. Relax your mind. Reconnect with yourself. Experience soothing therapies inspired by Ayurveda and timeless wellness traditions.
@@ -49,7 +49,7 @@ export default function Footer() {
           <div className="footer-contact-info">
             <p className="footer-text" style={{ display: 'flex', alignItems: 'flex-start', gap: '0.8rem' }}>
               <svg viewBox="0 0 24 24" fill="none" stroke="#c39c6b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '20px', height: '20px', flexShrink: 0, marginTop: '2px' }}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span>FJGV+993, Gaerlan St, Cagayan De Oro City, Misamis Oriental, Philippines</span>
+              <a href="https://maps.app.goo.gl/VpmAnNj36gf2QcMH8" target="_blank" rel="noopener noreferrer" className="footer-contact-link">FJGV+993, Gaerlan St, Cagayan De Oro City, Misamis Oriental, Philippines</a>
             </p>
             <p className="footer-text" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
               <svg viewBox="0 0 24 24" fill="none" stroke="#c39c6b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '20px', height: '20px', flexShrink: 0 }}><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
@@ -57,22 +57,22 @@ export default function Footer() {
             </p>
             <p className="footer-text" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
               <svg viewBox="0 0 24 24" fill="none" stroke="#c39c6b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '20px', height: '20px', flexShrink: 0 }}><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              <span>+63 963 864 9151</span>
+              <a href="tel:+639638649151" className="footer-contact-link">+63 963 864 9151</a>
             </p>
             <p className="footer-text" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
               <svg viewBox="0 0 24 24" fill="none" stroke="#c39c6b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '20px', height: '20px', flexShrink: 0 }}><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              <span>nillos.maelena08@gmail.com</span>
+              <a href="mailto:ayurvedaspacdo@gmail.com" className="footer-contact-link">ayurvedaspacdo@gmail.com</a>
             </p>
           </div>
           <div className="footer-socials">
-            <a href="#" className="footer-social-link" aria-label="Instagram">
+            <a href="https://www.instagram.com/ayurvedaspacdo/" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="Instagram">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '30px', height: '30px' }}>
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
               </svg>
             </a>
-            <a href="https://www.facebook.com/share/1E7HuSJAJr/" className="footer-social-link" aria-label="Facebook">
+            <a href="https://www.facebook.com/ayurvedamassagecdo" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="Facebook">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '30px', height: '30px' }}>
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
               </svg>

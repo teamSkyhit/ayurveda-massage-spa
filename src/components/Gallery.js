@@ -71,7 +71,7 @@ export default function Gallery() {
               onClick={() => setSelectedImage(src)}
               style={{ cursor: 'pointer' }}
             >
-              <img src={src} alt={`Spa Gallery ${idx + 1}`} loading="lazy" style={{ transition: 'transform 0.3s ease' }} onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'} onMouseLeave={(e) => e.target.style.transform = 'scale(1)'} />
+              <img src={src} alt={`Spa Gallery ${idx + 1}`} loading="lazy" width="600" height="450" style={{ transition: 'transform 0.3s ease' }} onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'} onMouseLeave={(e) => e.target.style.transform = 'scale(1)'} />
             </div>
           ))}
         </div>
