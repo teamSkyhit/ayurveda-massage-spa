@@ -47,7 +47,7 @@ export default function SeoAccordion() {
 
         <div 
           style={{ 
-            maxHeight: isOpen ? '2000px' : '0',
+            maxHeight: isOpen ? '4000px' : '0',
             opacity: isOpen ? 1 : 0,
             overflow: 'hidden',
             transition: 'all 0.5s ease-in-out',

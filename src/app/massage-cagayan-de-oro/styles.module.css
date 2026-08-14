@@ -432,6 +432,13 @@
   line-height: 1.2;
 }
 
+@media (max-width: 468px) {
+  .bookingColTitle {
+    font-size: 24px;
+    
+  }
+}
+
 /* Col 1: Why Choose Us */
 .whyChooseGrid {
   display: grid;
