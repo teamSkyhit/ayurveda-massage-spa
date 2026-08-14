@@ -162,7 +162,7 @@ export default function Treatments() {
         }
       `}} />
       <div className="treatments-bg-overlay" style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', opacity: 0.05, pointerEvents: 'none' }}>
-        <img src="/hero-bg-flower.png" alt="Decorative Flower" className="treatments-bg-flower" style={{ width: '800px', height: 'auto' }} />
+        <img src="/hero-bg-flower.png" alt="cdo massage" className="treatments-bg-flower" style={{ width: '800px', height: 'auto' }} />
       </div>
 
       <div className="treatments-header" style={{ position: 'relative', zIndex: 10 }}>

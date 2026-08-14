@@ -61,7 +61,7 @@ export default function Booking() {
         <div className="booking-image-wrapper">
           <img 
             src="/affordable-massage-cdo.webp" 
-            alt="Warm inviting massage setting" 
+            alt="thai massage spa near me" 
             className="booking-image" 
           />
         </div>
@@ -71,7 +71,7 @@ export default function Booking() {
           <div className="booking-header">
             <img 
               src="/ayurveda-massage-spa-lotus.gif" 
-              alt="Lotus Animation" 
+              alt="thai spa" 
               className="booking-lotus" 
             />
             <h2 className="booking-title">Book an Appointment</h2>

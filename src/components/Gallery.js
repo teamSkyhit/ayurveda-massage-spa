@@ -111,7 +111,7 @@ export default function Gallery() {
           </button>
           <img 
             src={selectedImage} 
-            alt="Full size preview" 
+            alt="400 peso massage cdo" 
             style={{
               maxWidth: '100%',
               maxHeight: '100%',

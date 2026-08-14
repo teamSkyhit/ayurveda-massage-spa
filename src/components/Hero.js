@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section className="hero-section">
       <div className="hero-bg-overlay">
-        <img src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-flower-img.png" alt="Flower Background Overlay" className="hero-bg-flower" />
+        <img src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-flower-img.png" alt="affordable massage cdo" className="hero-bg-flower" />
       </div>
 
       <div className="hero-container">
@@ -53,18 +53,18 @@ export default function Hero() {
         <div className={`hero-image-wrapper ${isLoaded ? 'fade-in-right' : ''}`}>
           <img 
             src="https://slategrey-bee-869726.hostingersite.com/images/affordable-massage-cagayan-de-oro.png" 
-            alt="Corner Decor" 
+            alt="affordable massage cagayan de oro" 
             className="hero-corner-img" 
           />
           <img 
             src="https://slategrey-bee-869726.hostingersite.com/images/cheap-massage-cdo.webp" 
-            alt="cheap massage cdo" 
+            alt="cheap massage near me" 
             className="hero-main-img" 
           />
           
           <img 
             src="https://slategrey-bee-869726.hostingersite.com/images/cheap-massage-near-me.png" 
-            alt="Essential Oil Bottle" 
+            alt="affordable spa cdo" 
             className="hero-bottle-img float-animation" 
           />
         </div>
