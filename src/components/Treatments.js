@@ -256,7 +256,7 @@ export default function Treatments() {
                   <div className="t-card-bottom" style={{ maxHeight: 0, margin: 0, opacity: 0, overflow: 'hidden', transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)', pointerEvents: 'none', display: 'flex', flexDirection: 'column', flexShrink: 0 }}>
                     <p className="t-card-desc" style={{ fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1rem' }}>{card.desc}</p>
                   </div>
-                  <div className="t-card-price-row" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', borderTop: '1px solid rgba(255,255,255,0.2)', paddingTop: '1.2rem', paddingBottom: '1.2rem', pointerEvents: 'auto', marginTop: 'auto' }}>
+                  <div className="t-card-price-row" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', borderTop: '1px solid rgba(255,255,255,0.2)', paddingTop: '1.2rem', paddingBottom: '1.2rem', pointerEvents: 'auto', marginTop: '1rem' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', fontSize: '1.5rem', fontWeight: 'bold', color: '#fff', lineHeight: 1 }}>
                       <span style={{ fontSize: '1.2rem' }}>₱</span>
                       <span>{card.price}</span>
