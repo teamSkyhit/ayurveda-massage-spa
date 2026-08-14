@@ -25,13 +25,13 @@ export default function Gallery() {
   }, []);
 
   const galleryImages = [
-    "https://slategrey-bee-869726.hostingersite.com/images/deep-tissue-massage-near-me.webp",
-    "https://slategrey-bee-869726.hostingersite.com/images/ayurvedic-massage-near-me.webp",
-    "https://slategrey-bee-869726.hostingersite.com/images/hot-stone-massage-near-me.webp",
-    "https://slategrey-bee-869726.hostingersite.com/images/massage-spa-near-me.webp",
-    "https://slategrey-bee-869726.hostingersite.com/images/cdo-massage.webp",
-    "https://slategrey-bee-869726.hostingersite.com/images/massage-in-cdo.webp",
-    "https://slategrey-bee-869726.hostingersite.com/images/massage-spa-cdo.webp",
+    "https://ayurvedaspa.ph/images/deep-tissue-massage-near-me.webp",
+    "https://ayurvedaspa.ph/images/ayurvedic-massage-near-me.webp",
+    "https://ayurvedaspa.ph/images/hot-stone-massage-near-me.webp",
+    "https://ayurvedaspa.ph/images/massage-spa-near-me.webp",
+    "https://ayurvedaspa.ph/images/cdo-massage.webp",
+    "https://ayurvedaspa.ph/images/massage-in-cdo.webp",
+    "https://ayurvedaspa.ph/images/massage-spa-cdo.webp",
 
   ];
 

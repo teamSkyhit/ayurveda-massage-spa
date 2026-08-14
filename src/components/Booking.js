@@ -60,7 +60,7 @@ export default function Booking() {
         {/* Left Image */}
         <div className="booking-image-wrapper">
           <img 
-            src="https://slategrey-bee-869726.hostingersite.com/images/affordable-massage-cdo.webp" 
+            src="https://ayurvedaspa.ph/images/affordable-massage-cdo.webp" 
             alt="thai massage spa near me" 
             className="booking-image" 
           />
@@ -70,7 +70,7 @@ export default function Booking() {
         <div className="booking-form-wrapper">
           <div className="booking-header">
             <img 
-              src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-lotus.gif" 
+              src="https://ayurvedaspa.ph/images/ayurveda-massage-spa-lotus.gif" 
               alt="thai spa" 
               className="booking-lotus" 
             />

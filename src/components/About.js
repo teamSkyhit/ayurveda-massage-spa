@@ -115,7 +115,7 @@ export default function About() {
         <div className="about-bg-overlay">
           <img 
             ref={flowerRef}
-            src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-bg.png" 
+            src="https://ayurvedaspa.ph/images/ayurveda-massage-spa-bg.png" 
             alt="full body thai massage near me" 
             className="about-bg-flower" 
             style={{ transition: 'transform 0.1s ease-out' }}
@@ -125,12 +125,12 @@ export default function About() {
         {/* Left Side: Image */}
         <div className={`about-image-wrapper ${isVisible ? 'slide-up-fade' : 'opacity-0'}`}>
           <img 
-            src="https://slategrey-bee-869726.hostingersite.com/images/affordable-massage-cdo.webp" 
+            src="https://ayurvedaspa.ph/images/affordable-massage-cdo.webp" 
             alt="home service massage cdo" 
             className="about-main-img" 
           />
           <img 
-            src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-about-icon.png" 
+            src="https://ayurvedaspa.ph/images/ayurveda-massage-spa-about-icon.png" 
             alt="massage home service cdo" 
             style={{
               position: 'absolute',
@@ -143,7 +143,7 @@ export default function About() {
             }}
           />
           <img 
-            src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-bg-stone-flower.png" 
+            src="https://ayurvedaspa.ph/images/ayurveda-massage-spa-bg-stone-flower.png" 
             alt="massage at home cdo" 
             style={{
               position: 'absolute',

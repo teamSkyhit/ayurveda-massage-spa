@@ -10,7 +10,7 @@ export default function ThankYouPage() {
         
         <div className={styles.logoWrapper}>
           <img 
-            src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-and--spa-logo.png" 
+            src="https://ayurvedaspa.ph/images/ayurveda-massage-and--spa-logo.png" 
             alt="home massage cagayan de oro" 
             className={styles.logo}
           />

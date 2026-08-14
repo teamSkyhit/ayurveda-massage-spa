@@ -4,28 +4,28 @@ export default function Features() {
       title: "Personalised Care",
       desc: "Treatments centred around your comfort and preferences.",
       icon: (
-        <img src="https://slategrey-bee-869726.hostingersite.com/images/spa-near-me.gif" alt="thai massage near me" style={{ width: '90px', height: '90px', marginBottom: '1.5rem', objectFit: 'contain' }} />
+        <img src="https://ayurvedaspa.ph/images/spa-near-me.gif" alt="thai massage near me" style={{ width: '90px', height: '90px', marginBottom: '1.5rem', objectFit: 'contain' }} />
       )
     },
     {
       title: "Experienced Therapists",
       desc: "Professional service delivered with care and attention.",
       icon: (
-        <img src="https://slategrey-bee-869726.hostingersite.com/images/body-massage-near-me.gif" alt="thailand massage" style={{ width: '90px', height: '90px', marginBottom: '1.5rem', objectFit: 'contain' }} />
+        <img src="https://ayurvedaspa.ph/images/body-massage-near-me.gif" alt="thailand massage" style={{ width: '90px', height: '90px', marginBottom: '1.5rem', objectFit: 'contain' }} />
       )
     },
     {
       title: "Natural Wellness Products",
       desc: "Thoughtfully selected oils and spa essentials.",
       icon: (
-        <img src="https://slategrey-bee-869726.hostingersite.com/images/thai-massage-near-me.gif" alt="thailand massage near me" style={{ width: '90px', height: '90px', marginBottom: '1.5rem', objectFit: 'contain' }} />
+        <img src="https://ayurvedaspa.ph/images/thai-massage-near-me.gif" alt="thailand massage near me" style={{ width: '90px', height: '90px', marginBottom: '1.5rem', objectFit: 'contain' }} />
       )
     },
     {
       title: "Calm & Hygienic Spaces",
       desc: "A peaceful environment designed for comfort and privacy.",
       icon: (
-        <img src="https://slategrey-bee-869726.hostingersite.com/images/swedish-massage-near-me.gif" alt="thai spa near me" style={{ width: '90px', height: '90px', marginBottom: '1.5rem', objectFit: 'contain' }} />
+        <img src="https://ayurvedaspa.ph/images/swedish-massage-near-me.gif" alt="thai spa near me" style={{ width: '90px', height: '90px', marginBottom: '1.5rem', objectFit: 'contain' }} />
       )
     }
   ];

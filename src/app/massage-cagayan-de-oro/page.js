@@ -125,7 +125,7 @@ export default function FullBodyThaiMassageNearMe() {
           {/* Card 1: Ayur Signature */}
           <a href="https://wa.link/xvmbyd" target="_blank" rel="noopener noreferrer" className={styles.serviceCard} style={{ textDecoration: 'none' }}>
             <div className={styles.serviceIcon}>
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/massage-spa-near-me.png" alt="hotel massage cdo" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+              <img src="https://ayurvedaspa.ph/images/massage-spa-near-me.png" alt="hotel massage cdo" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
             </div>
             <div className={styles.serviceName}>Ayur Signature<br/>Massage</div>
             <div className={styles.servicePrice}>₱500</div>
@@ -135,7 +135,7 @@ export default function FullBodyThaiMassageNearMe() {
           {/* Card 2: Hawaiian Veda */}
           <a href="https://wa.link/xvmbyd" target="_blank" rel="noopener noreferrer" className={styles.serviceCard} style={{ textDecoration: 'none' }}>
             <div className={styles.serviceIcon}>
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/spa-and-massage-near-me.png" alt="hotel massage cagayan de oro" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+              <img src="https://ayurvedaspa.ph/images/spa-and-massage-near-me.png" alt="hotel massage cagayan de oro" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
             </div>
             <div className={styles.serviceName}>Hawaiian Veda<br/>Massage</div>
             <div className={styles.servicePrice}>₱600</div>
@@ -145,7 +145,7 @@ export default function FullBodyThaiMassageNearMe() {
           {/* Card 3: Classic Swedish */}
           <a href="https://wa.link/xvmbyd" target="_blank" rel="noopener noreferrer" className={styles.serviceCard} style={{ textDecoration: 'none' }}>
             <div className={styles.serviceIcon}>
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/near-me-massage-spa.png" alt="massage hotel cdo" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+              <img src="https://ayurvedaspa.ph/images/near-me-massage-spa.png" alt="massage hotel cdo" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
             </div>
             <div className={styles.serviceName}>Classic<br/>Swedish Massage</div>
             <div className={styles.servicePrice}>₱400</div>
@@ -155,7 +155,7 @@ export default function FullBodyThaiMassageNearMe() {
           {/* Card 4: Royal Thai */}
           <a href="https://wa.link/xvmbyd" target="_blank" rel="noopener noreferrer" className={styles.serviceCard} style={{ textDecoration: 'none' }}>
             <div className={styles.serviceIcon}>
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/spas-nearme.png" alt="home massage near me" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+              <img src="https://ayurvedaspa.ph/images/spas-nearme.png" alt="home massage near me" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
             </div>
             <div className={styles.serviceName}>Royal<br/>Thai Massage</div>
             <div className={styles.servicePrice}>₱450</div>
@@ -165,7 +165,7 @@ export default function FullBodyThaiMassageNearMe() {
           {/* Card 5: Deep Tissue */}
           <a href="https://wa.link/xvmbyd" target="_blank" rel="noopener noreferrer" className={styles.serviceCard} style={{ textDecoration: 'none' }}>
             <div className={styles.serviceIcon}>
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/foot-massage-near-me.png" alt="hotel massage near me" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+              <img src="https://ayurvedaspa.ph/images/foot-massage-near-me.png" alt="hotel massage near me" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
             </div>
             <div className={styles.serviceName}>Deep Tissue<br/>Massage</div>
             <div className={styles.servicePrice}>₱450</div>
@@ -175,7 +175,7 @@ export default function FullBodyThaiMassageNearMe() {
           {/* Card 6: Lymphatic */}
           <a href="https://wa.link/xvmbyd" target="_blank" rel="noopener noreferrer" className={styles.serviceCard} style={{ textDecoration: 'none' }}>
             <div className={styles.serviceIcon}>
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/best-massage-near-me.png" alt="spa near me" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+              <img src="https://ayurvedaspa.ph/images/best-massage-near-me.png" alt="spa near me" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
             </div>
             <div className={styles.serviceName}>Lymphatic<br/>Massage</div>
             <div className={styles.servicePrice}>₱500</div>
@@ -185,7 +185,7 @@ export default function FullBodyThaiMassageNearMe() {
           {/* Card 7: Herbal Ayurvedic */}
           <a href="https://wa.link/xvmbyd" target="_blank" rel="noopener noreferrer" className={styles.serviceCard} style={{ textDecoration: 'none' }}>
             <div className={styles.serviceIcon}>
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/foot-spa-near-me.png" alt="body massage near me" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+              <img src="https://ayurvedaspa.ph/images/foot-spa-near-me.png" alt="body massage near me" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
             </div>
             <div className={styles.serviceName}>Herbal<br/>Ayurvedic Massage</div>
             <div className={styles.servicePrice}>₱600</div>
@@ -195,7 +195,7 @@ export default function FullBodyThaiMassageNearMe() {
           {/* Card 8: Hot Stone */}
           <a href="https://wa.link/xvmbyd" target="_blank" rel="noopener noreferrer" className={styles.serviceCard} style={{ textDecoration: 'none' }}>
             <div className={styles.serviceIcon}>
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/thai-masssage.png" alt="thai massage near me" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+              <img src="https://ayurvedaspa.ph/images/thai-masssage.png" alt="thai massage near me" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
             </div>
             <div className={styles.serviceName}>Hot Stone<br/>Massage</div>
             <div className={styles.servicePrice}>₱700</div>
@@ -205,7 +205,7 @@ export default function FullBodyThaiMassageNearMe() {
           {/* Card 9: Cupping / Ventosa */}
           <a href="https://wa.link/xvmbyd" target="_blank" rel="noopener noreferrer" className={styles.serviceCard} style={{ textDecoration: 'none' }}>
             <div className={styles.serviceIcon}>
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/thai-massage-near-me.png" alt="swedish massage near me" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+              <img src="https://ayurvedaspa.ph/images/thai-massage-near-me.png" alt="swedish massage near me" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
             </div>
             <div className={styles.serviceName}>Cupping /<br/>Ventosa Massage</div>
             <div className={styles.servicePrice}>₱600</div>
@@ -215,7 +215,7 @@ export default function FullBodyThaiMassageNearMe() {
           {/* Card 10: Foot, Hand & Back */}
           <a href="https://wa.link/xvmbyd" target="_blank" rel="noopener noreferrer" className={styles.serviceCard} style={{ textDecoration: 'none' }}>
             <div className={styles.serviceIcon}>
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/thailand-massage.png" alt="deep tissue massage near me" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+              <img src="https://ayurvedaspa.ph/images/thailand-massage.png" alt="deep tissue massage near me" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
             </div>
             <div className={styles.serviceName}>Foot, Hand &<br/>Back Massage</div>
             <div className={styles.servicePrice}>₱400</div>
@@ -226,7 +226,7 @@ export default function FullBodyThaiMassageNearMe() {
           <a href="https://wa.link/xvmbyd" target="_blank" rel="noopener noreferrer" className={`${styles.serviceCard} ${styles.serviceCardHighlight}`} style={{ textDecoration: 'none' }}>
             <div className={styles.popularBadge}>POPULAR</div>
             <div className={styles.serviceIcon}>
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/thailand-massage-near-me.png" alt="ayurvedic massage near me" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
+              <img src="https://ayurvedaspa.ph/images/thailand-massage-near-me.png" alt="ayurvedic massage near me" style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
             </div>
             <div className={styles.serviceName}>Home & Hotel<br/>Service</div>
             <div className={styles.servicePrice}>₱999</div>
@@ -354,12 +354,12 @@ export default function FullBodyThaiMassageNearMe() {
           <div className={styles.infoCol}>
             <h3 className={styles.infoColTitle}>Inside Ayurveda<br/>Massage & Spa</h3>
             <div className={styles.spaGallery}>
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/thai-spa.webp" alt="hot stone massage near me" className={styles.spaGalleryImg} />
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/ayurvedic-massage-near-me.webp" alt="massage spa near me" className={styles.spaGalleryImg} />
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/hot-stone-massage-near-me.webp" alt="deep tissue massage" className={styles.spaGalleryImg} />
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/massage-spa-near-me.webp" alt="a deep tissue massage" className={styles.spaGalleryImg} />
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/cdo-massage.webp" alt="deep deep tissue massage" className={styles.spaGalleryImg} />
-              <img src="https://slategrey-bee-869726.hostingersite.com/images/massage-in-cdo.webp" alt="deep tissue massage near me" className={styles.spaGalleryImg} />
+              <img src="https://ayurvedaspa.ph/images/thai-spa.webp" alt="hot stone massage near me" className={styles.spaGalleryImg} />
+              <img src="https://ayurvedaspa.ph/images/ayurvedic-massage-near-me.webp" alt="massage spa near me" className={styles.spaGalleryImg} />
+              <img src="https://ayurvedaspa.ph/images/hot-stone-massage-near-me.webp" alt="deep tissue massage" className={styles.spaGalleryImg} />
+              <img src="https://ayurvedaspa.ph/images/massage-spa-near-me.webp" alt="a deep tissue massage" className={styles.spaGalleryImg} />
+              <img src="https://ayurvedaspa.ph/images/cdo-massage.webp" alt="deep deep tissue massage" className={styles.spaGalleryImg} />
+              <img src="https://ayurvedaspa.ph/images/massage-in-cdo.webp" alt="deep tissue massage near me" className={styles.spaGalleryImg} />
             </div>
           </div>
 

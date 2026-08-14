@@ -3,7 +3,7 @@
   display: flex;
   min-height: 100vh;
   background-color: #fbf9f4;
-  background-image: url('https://slategrey-bee-869726.hostingersite.com/images/massage-spa-in-cdo.webp');
+  background-image: url('https://ayurvedaspa.ph/images/massage-spa-in-cdo.webp');
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
@@ -345,7 +345,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    background-image: url('https://slategrey-bee-869726.hostingersite.com/images/best-massage-in-cdo.webp');
+    background-image: url('https://ayurvedaspa.ph/images/best-massage-in-cdo.webp');
     background-position: center top;
     justify-content: flex-end; /* Align content to bottom if image is on top, but we'll center it for now */
   }
@@ -544,7 +544,7 @@ textarea.formInput {
 
 /* Col 3: Contact Image Block */
 .bookingColImage {
-  background-image: linear-gradient(rgba(251, 249, 244, 0.9), rgba(251, 249, 244, 0.85)), url('https://slategrey-bee-869726.hostingersite.com/images/thai-spa-near-me.webp');
+  background-image: linear-gradient(rgba(251, 249, 244, 0.9), rgba(251, 249, 244, 0.85)), url('https://ayurvedaspa.ph/images/thai-spa-near-me.webp');
   background-size: cover;
   background-position: center;
   position: relative;

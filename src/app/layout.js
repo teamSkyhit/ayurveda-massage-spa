@@ -21,7 +21,7 @@ export const metadata = {
   description: "Relax and unwind at Ayurveda Massage & Spa in Cagayan de Oro. Enjoy Swedish, Thai, Ayurvedic, deep tissue, hot stone and more. Book today.",
   keywords: "massage spa cdo, massage spa cagayan de oro, massage in cagayan de oro, spa in cagayan de oro, ayurvedic massage cdo, thai massage cdo, swedish massage cdo, deep tissue massage cdo, hot stone massage cdo",
   icons: {
-    icon: 'https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-fav-icon.png',
+    icon: 'https://ayurvedaspa.ph/images/ayurveda-massage-spa-fav-icon.png',
   },
 };
 

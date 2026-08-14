@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="main-footer">
       <div className="footer-bg-overlay">
-        <img src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-flower-img.png" alt="massage 400 cdo" className="footer-bg-flower" />
+        <img src="https://ayurvedaspa.ph/images/ayurveda-massage-flower-img.png" alt="massage 400 cdo" className="footer-bg-flower" />
       </div>
       
       <div className="footer-container">
@@ -12,7 +12,7 @@ export default function Footer() {
         {/* Column 1: Logo & Info */}
         <div className="footer-col footer-col-info">
           <Link href="/">
-            <img src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-and--spa-logo.png" alt="thai masssage" className="footer-logo" />
+            <img src="https://ayurvedaspa.ph/images/ayurveda-massage-and--spa-logo.png" alt="thai masssage" className="footer-logo" />
           </Link>
           <p className="footer-text">
             Restore your body. Relax your mind. Reconnect with yourself. Experience soothing therapies inspired by Ayurveda and timeless wellness traditions.

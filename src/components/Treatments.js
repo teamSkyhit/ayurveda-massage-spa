@@ -6,88 +6,88 @@ export default function Treatments() {
     {
       title: 'Ayur Signature Massage',
       desc: 'A balanced full-body experience combining relaxation, stretching and flowing massage techniques.',
-      img: 'https://slategrey-bee-869726.hostingersite.com/images/affordable-spa-cdo.webp',
-      icon: 'https://slategrey-bee-869726.hostingersite.com/images/ayurveda-spa-massage-icon-01.png',
+      img: 'https://ayurvedaspa.ph/images/affordable-spa-cdo.webp',
+      icon: 'https://ayurvedaspa.ph/images/ayurveda-spa-massage-icon-01.png',
       gridCol: 'span 3', height: '500px',
       price: '500', duration: '60 mins'
     },
     {
       title: 'Hawaiian Veda Massage',
       desc: 'Long, flowing movements designed to create a deeply calming and restorative experience.',
-      img: 'https://slategrey-bee-869726.hostingersite.com/images/massage-under-500-cdo.webp',
-      icon: 'https://slategrey-bee-869726.hostingersite.com/images/ayurveda-spa-massage-icon-02.png',
+      img: 'https://ayurvedaspa.ph/images/massage-under-500-cdo.webp',
+      icon: 'https://ayurvedaspa.ph/images/ayurveda-spa-massage-icon-02.png',
       gridCol: 'span 3', height: '500px',
       price: '600', duration: '60 mins'
     },
     {
       title: 'Classic Swedish Massage',
       desc: 'Gentle rhythmic techniques created to help the body unwind and release everyday tension.',
-      img: 'https://slategrey-bee-869726.hostingersite.com/images/400-peso-massage-cdo.webp',
-      icon: 'https://slategrey-bee-869726.hostingersite.com/images/ayurveda-spa-massage-icon-03.png',
+      img: 'https://ayurvedaspa.ph/images/400-peso-massage-cdo.webp',
+      icon: 'https://ayurvedaspa.ph/images/ayurveda-spa-massage-icon-03.png',
       gridCol: 'span 2', height: '460px',
       price: '400', duration: '60 mins'
     },
     {
       title: 'Royal Thai Massage',
       desc: 'Traditional stretching and pressure techniques for flexibility, mobility and relaxation.',
-      img: 'https://slategrey-bee-869726.hostingersite.com/images/massage-400-cdo.webp',
-      icon: 'https://slategrey-bee-869726.hostingersite.com/images/ayurveda-spa-massage-icon-04.png',
+      img: 'https://ayurvedaspa.ph/images/massage-400-cdo.webp',
+      icon: 'https://ayurvedaspa.ph/images/ayurveda-spa-massage-icon-04.png',
       gridCol: 'span 2', height: '460px',
       price: '450', duration: '60 mins'
     },
     {
       title: 'Deep Tissue Massage',
       desc: 'Focused techniques for areas carrying deeper muscular tension.',
-      img: 'https://slategrey-bee-869726.hostingersite.com/images/home-massage-cdo.webp',
-      icon: 'https://slategrey-bee-869726.hostingersite.com/images/ayurveda-spa-massage-icon-05.png',
+      img: 'https://ayurvedaspa.ph/images/home-massage-cdo.webp',
+      icon: 'https://ayurvedaspa.ph/images/ayurveda-spa-massage-icon-05.png',
       gridCol: 'span 2', height: '460px',
       price: '450', duration: '60 mins'
     },
     {
       title: 'Lymphatic Massage',
       desc: 'A gentle, slow-paced massage experience designed around comfort and relaxation.',
-      img: 'https://slategrey-bee-869726.hostingersite.com/images/home-service-massage-cdo.webp',
-      icon: 'https://slategrey-bee-869726.hostingersite.com/images/ayurveda-spa-massage-icon-6.png',
+      img: 'https://ayurvedaspa.ph/images/home-service-massage-cdo.webp',
+      icon: 'https://ayurvedaspa.ph/images/ayurveda-spa-massage-icon-6.png',
       gridCol: 'span 3', height: '420px',
       price: '500', duration: '60 mins'
     },
     {
       title: 'Herbal Ayurvedic Massage',
       desc: 'An Ayurvedic-inspired massage experience complemented by herbal oils.',
-      img: 'https://slategrey-bee-869726.hostingersite.com/images/massage-home-service-cdo.webp',
-      icon: 'https://slategrey-bee-869726.hostingersite.com/images/ayurveda-spa-massage-icon-7.png',
+      img: 'https://ayurvedaspa.ph/images/massage-home-service-cdo.webp',
+      icon: 'https://ayurvedaspa.ph/images/ayurveda-spa-massage-icon-7.png',
       gridCol: 'span 3', height: '420px',
       price: '600', duration: '60 mins'
     },
     {
       title: 'Hot Stone Massage',
       desc: 'Warm stones and slow massage techniques for a deeply comforting spa ritual.',
-      img: 'https://slategrey-bee-869726.hostingersite.com/images/massage-at-home-cdo.webp',
-      icon: 'https://slategrey-bee-869726.hostingersite.com/images/ayurveda-spa-massage-icon-8.png',
+      img: 'https://ayurvedaspa.ph/images/massage-at-home-cdo.webp',
+      icon: 'https://ayurvedaspa.ph/images/ayurveda-spa-massage-icon-8.png',
       gridCol: 'span 4', height: '600px',
       price: '700', duration: '75 mins'
     },
     {
       title: 'Cupping / Ventosa Massage',
       desc: 'A wellness session combining massage with traditional cupping techniques.',
-      img: 'https://slategrey-bee-869726.hostingersite.com/images/home-massage-cagayan-de-oro.webp',
-      icon: 'https://slategrey-bee-869726.hostingersite.com/images/ayurveda-spa-massage-icon-9.png',
+      img: 'https://ayurvedaspa.ph/images/home-massage-cagayan-de-oro.webp',
+      icon: 'https://ayurvedaspa.ph/images/ayurveda-spa-massage-icon-9.png',
       gridCol: 'span 2', height: '600px',
       price: '600', duration: '60 mins'
     },
     {
       title: 'Foot, Hand & Back Massage',
       desc: 'Focused care for areas that often carry everyday stress and fatigue.',
-      img: 'https://slategrey-bee-869726.hostingersite.com/images/hotel-massage-cdo.webp',
-      icon: 'https://slategrey-bee-869726.hostingersite.com/images/ayurveda-spa-massage-icon-10.png',
+      img: 'https://ayurvedaspa.ph/images/hotel-massage-cdo.webp',
+      icon: 'https://ayurvedaspa.ph/images/ayurveda-spa-massage-icon-10.png',
       gridCol: 'span 3', height: '420px',
       price: '400', duration: '60 mins'
     },
     {
       title: 'Home & Hotel Services',
       desc: 'Enjoy selected massage experiences from the comfort of your home or hotel.',
-      img: 'https://slategrey-bee-869726.hostingersite.com/images/hotel-massage-cagayan-de-oro.webp',
-      icon: 'https://slategrey-bee-869726.hostingersite.com/images/ayurveda-spa-massage-icon-11.png',
+      img: 'https://ayurvedaspa.ph/images/hotel-massage-cagayan-de-oro.webp',
+      icon: 'https://ayurvedaspa.ph/images/ayurveda-spa-massage-icon-11.png',
       gridCol: 'span 3', height: '420px',
       price: '999', duration: '60 mins'
     }
@@ -162,7 +162,7 @@ export default function Treatments() {
         }
       `}} />
       <div className="treatments-bg-overlay" style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', opacity: 0.05, pointerEvents: 'none' }}>
-        <img src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-spa-massage-hero-bg-flower.png" alt="cdo massage" className="treatments-bg-flower" style={{ width: '800px', height: 'auto' }} />
+        <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-hero-bg-flower.png" alt="cdo massage" className="treatments-bg-flower" style={{ width: '800px', height: 'auto' }} />
       </div>
 
       <div className="treatments-header" style={{ position: 'relative', zIndex: 10 }}>

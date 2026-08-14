@@ -4,17 +4,17 @@ import { useRef } from 'react';
 import styles from './styles.module.css';
 
 const services = [
-  { name: "Ayur Signature Massage", price: "₱500", duration: "60 mins", image: "https://slategrey-bee-869726.hostingersite.com/images/thai-massage-spa-near-me.webp" },
-  { name: "Hawaiian Veda Massage", price: "₱600", duration: "60 mins", image: "https://slategrey-bee-869726.hostingersite.com/images/thai-spa.webp" },
-  { name: "Classic Swedish Massage", price: "₱400", duration: "60 mins", image: "https://slategrey-bee-869726.hostingersite.com/images/full-body-thai-massage-near-me.webp" },
-  { name: "Royal Thai Massage", price: "₱450", duration: "60 mins", image: "https://slategrey-bee-869726.hostingersite.com/images/deep-tissue-massage.webp" },
-  { name: "Deep Tissue Massage", price: "₱450", duration: "60 mins", image: "https://slategrey-bee-869726.hostingersite.com/images/a-deep-tissue-massage.webp" },
-  { name: "Lymphatic Massage", price: "₱500", duration: "60 mins", image: "https://slategrey-bee-869726.hostingersite.com/images/ayurveda-spa-massage-lymphatic-massage.webp" },
-  { name: "Herbal Ayurvedic Massage", price: "₱600", duration: "60 mins", image: "https://slategrey-bee-869726.hostingersite.com/images/deep-deep-tissue-massage.webp" },
-  { name: "Hot Stone Massage", price: "₱700", duration: "75 mins", image: "https://slategrey-bee-869726.hostingersite.com/images/deep-massage.webp" },
-  { name: "Cupping / Ventosa Massage", price: "₱600", duration: "60 mins", image: "https://slategrey-bee-869726.hostingersite.com/images/deep-tissue-massage-therapist-near-me.webp" },
-  { name: "Foot Hand & Back Massage", price: "₱400", duration: "60 mins", image: "https://slategrey-bee-869726.hostingersite.com/images/ayurveda-spa-massage-foot-hand-back-massage.webp" },
-  { name: "Home and Hotel Services", price: "₱999", duration: "60 mins", image: "https://slategrey-bee-869726.hostingersite.com/images/ayurveda-spa-massage-home-hotel-services.webp" }
+  { name: "Ayur Signature Massage", price: "₱500", duration: "60 mins", image: "https://ayurvedaspa.ph/images/thai-massage-spa-near-me.webp" },
+  { name: "Hawaiian Veda Massage", price: "₱600", duration: "60 mins", image: "https://ayurvedaspa.ph/images/thai-spa.webp" },
+  { name: "Classic Swedish Massage", price: "₱400", duration: "60 mins", image: "https://ayurvedaspa.ph/images/full-body-thai-massage-near-me.webp" },
+  { name: "Royal Thai Massage", price: "₱450", duration: "60 mins", image: "https://ayurvedaspa.ph/images/deep-tissue-massage.webp" },
+  { name: "Deep Tissue Massage", price: "₱450", duration: "60 mins", image: "https://ayurvedaspa.ph/images/a-deep-tissue-massage.webp" },
+  { name: "Lymphatic Massage", price: "₱500", duration: "60 mins", image: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-lymphatic-massage.webp" },
+  { name: "Herbal Ayurvedic Massage", price: "₱600", duration: "60 mins", image: "https://ayurvedaspa.ph/images/deep-deep-tissue-massage.webp" },
+  { name: "Hot Stone Massage", price: "₱700", duration: "75 mins", image: "https://ayurvedaspa.ph/images/deep-massage.webp" },
+  { name: "Cupping / Ventosa Massage", price: "₱600", duration: "60 mins", image: "https://ayurvedaspa.ph/images/deep-tissue-massage-therapist-near-me.webp" },
+  { name: "Foot Hand & Back Massage", price: "₱400", duration: "60 mins", image: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-foot-hand-back-massage.webp" },
+  { name: "Home and Hotel Services", price: "₱999", duration: "60 mins", image: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-home-hotel-services.webp" }
 ];
 
 export default function ServicesImageCarousel() {
