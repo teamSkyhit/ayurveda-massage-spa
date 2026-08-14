@@ -255,18 +255,18 @@ export default function Treatments() {
                 
                   <div className="t-card-bottom" style={{ maxHeight: 0, margin: 0, opacity: 0, overflow: 'hidden', transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)', pointerEvents: 'none', display: 'flex', flexDirection: 'column', flexShrink: 0 }}>
                     <p className="t-card-desc" style={{ fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1rem' }}>{card.desc}</p>
-                    <div className="t-card-price-row" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', borderTop: '1px solid rgba(255,255,255,0.2)', paddingTop: '1.2rem', paddingBottom: '1.2rem', pointerEvents: 'auto' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', fontSize: '1.5rem', fontWeight: 'bold', color: '#fff', lineHeight: 1 }}>
-                        <span style={{ fontSize: '1.2rem' }}>₱</span>
-                        <span>{card.price}</span>
-                      </div>
-                      <div style={{ color: '#fff', opacity: 0.6, fontSize: '1.2rem', margin: '0 0.5rem' }}>|</div>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '1.1rem', fontWeight: 'bold', color: '#fff', letterSpacing: '0.5px', lineHeight: 1 }}>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{ width: '18px', height: '18px' }}>
-                          <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
-                        </svg>
-                        <span>{card.duration}</span>
-                      </div>
+                  </div>
+                  <div className="t-card-price-row" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', borderTop: '1px solid rgba(255,255,255,0.2)', paddingTop: '1.2rem', paddingBottom: '1.2rem', pointerEvents: 'auto', marginTop: 'auto' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', fontSize: '1.5rem', fontWeight: 'bold', color: '#fff', lineHeight: 1 }}>
+                      <span style={{ fontSize: '1.2rem' }}>₱</span>
+                      <span>{card.price}</span>
+                    </div>
+                    <div style={{ color: '#fff', opacity: 0.6, fontSize: '1.2rem', margin: '0 0.5rem' }}>|</div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '1.1rem', fontWeight: 'bold', color: '#fff', letterSpacing: '0.5px', lineHeight: 1 }}>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{ width: '18px', height: '18px' }}>
+                        <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      <span>{card.duration}</span>
                     </div>
                   </div>
                   <div className="t-card-btn-row" style={{ display: 'flex', gap: '1rem', pointerEvents: 'auto', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', marginTop: '1.5rem', flexShrink: 0, transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)' }}>
