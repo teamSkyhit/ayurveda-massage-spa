@@ -379,7 +379,7 @@
     grid-template-columns: 1fr;
   }
   .serviceCard {
-    width: calc(50% - 1rem); /* 2 columns */
+    width: calc(50% - 0.5rem); /* 2 columns */
   }
   .servicesSection {
     padding: 4rem 1rem;
@@ -387,7 +387,9 @@
 }
 @media (max-width: 480px) {
   .serviceCard {
-    width: 100%; /* 1 column */
+    width: calc(50% - 0.5rem); /* 2 columns on mobile */
+    min-width: 130px; /* slightly smaller min-width for mobile */
+    padding: 1.5rem 0.5rem 1rem 0.5rem; /* reduce padding so content fits */
   }
   
   .sectionTitle {
@@ -535,7 +537,7 @@ textarea.formInput {
 
 /* Col 3: Contact Image Block */
 .bookingColImage {
-  background-image: linear-gradient(rgba(251, 249, 244, 0.9), rgba(251, 249, 244, 0.85)), url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+  background-image: linear-gradient(rgba(251, 249, 244, 0.9), rgba(251, 249, 244, 0.85)), url('https://slategrey-bee-869726.hostingersite.com/images/thai-spa-near-me.webp');
   background-size: cover;
   background-position: center;
   position: relative;
