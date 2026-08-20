@@ -43,7 +43,7 @@ export default function ServicesImageCarousel() {
             <img src={service.image} alt={service.name} className={styles.imgCardImg} />
             <div className={styles.imgCardTitle}>{service.name}</div>
             <div className={styles.imgCardPrice}>{service.price} | {service.duration}</div>
-            <a href="https://wa.link/xvmbyd" target="_blank" rel="noopener noreferrer" className={styles.btnBookNow}>BOOK NOW</a>
+            <a href="https://wa.me/+639638649151" target="_blank" rel="noopener noreferrer" className={styles.btnBookNow}>BOOK NOW</a>
           </div>
         ))}
       </div>

@@ -4,40 +4,46 @@ import { useState } from 'react';
 
 export default function SeoAccordion() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 2rem 4rem 2rem' }}>
-      <div 
-        style={{ 
-          backgroundColor: '#ffffff', 
+      <div
+        style={{
+          backgroundColor: '#ffffff',
           borderRadius: '8px',
           overflow: 'hidden',
-          border: '1px solid #e0e0e0',
+          // border: '1px solid #e0e0e0',
           transition: 'all 0.3s ease'
         }}
       >
-        <button 
+        <button
           onClick={() => setIsOpen(!isOpen)}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
           style={{
             width: '100%',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
             padding: '1.5rem 2rem',
-            backgroundColor: '#c39c6b',
-            border: 'none',
-            color: '#ffffff',
+            backgroundColor: isHovered ? '#c39c6b' : '#fff',
+            border: '1px solid #c39c6b',
+            color: isHovered ? '#fff' : '#c39c6b',
             cursor: 'pointer',
             textAlign: 'left',
             fontFamily: 'var(--font-outfit), sans-serif',
             fontSize: '1.25rem',
-            fontWeight: '600'
+            fontWeight: '600',
+            transition: 'all 0.3s ease',
+            borderRadius: '50px',
           }}
+
           aria-expanded={isOpen}
         >
           <span>Massage Spa in Cagayan de Oro</span>
-          <span style={{ 
-            transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)', 
+          <span style={{
+            transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
             transition: 'transform 0.3s ease',
             fontSize: '0.9rem'
           }}>
@@ -45,8 +51,8 @@ export default function SeoAccordion() {
           </span>
         </button>
 
-        <div 
-          style={{ 
+        <div
+          style={{
             maxHeight: isOpen ? '4000px' : '0',
             opacity: isOpen ? 1 : 0,
             overflow: 'hidden',
@@ -54,8 +60,8 @@ export default function SeoAccordion() {
             backgroundColor: '#ffffff'
           }}
         >
-          <div style={{ 
-            padding: '2rem', 
+          <div style={{
+            padding: '2rem',
             fontFamily: 'var(--font-outfit), sans-serif',
             lineHeight: '1.8',
             fontSize: '1rem',
@@ -74,17 +80,17 @@ export default function SeoAccordion() {
             <p style={{ marginBottom: '1rem' }}>Our massage treatments start from ₱400, making it easy to choose a treatment that fits your preferences and budget.</p>
             <p style={{ marginBottom: '1rem' }}>Our current massage menu includes:</p>
             <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem', marginBottom: '1rem' }}>
-                <li>Classic Swedish Massage — ₱400</li>
-                <li>Foot, Hand &amp; Back Massage — ₱400</li>
-                <li>Royal Thai Massage — ₱450</li>
-                <li>Deep Tissue Massage — ₱450</li>
-                <li>Ayur Signature Massage — ₱500</li>
-                <li>Lymphatic Massage — ₱500</li>
-                <li>Hawaiian Veda Massage — ₱600</li>
-                <li>Herbal Ayurvedic Massage — ₱600</li>
-                <li>Cupping / Ventosa Massage — ₱600</li>
-                <li>Hot Stone Massage — ₱700</li>
-                <li>Home &amp; Hotel Services — ₱999</li>
+              <li>Classic Swedish Massage — ₱400</li>
+              <li>Foot, Hand &amp; Back Massage — ₱400</li>
+              <li>Royal Thai Massage — ₱450</li>
+              <li>Deep Tissue Massage — ₱450</li>
+              <li>Ayur Signature Massage — ₱500</li>
+              <li>Lymphatic Massage — ₱500</li>
+              <li>Hawaiian Veda Massage — ₱600</li>
+              <li>Herbal Ayurvedic Massage — ₱600</li>
+              <li>Cupping / Ventosa Massage — ₱600</li>
+              <li>Hot Stone Massage — ₱700</li>
+              <li>Home &amp; Hotel Services — ₱999</li>
             </ul>
             <p style={{ marginBottom: '1.5rem' }}>Most treatments are 60 minutes, while our Hot Stone Massage is 75 minutes.</p>
 

@@ -1,0 +1,366 @@
+.galleryPage {
+  width: 100%;
+  background-color: #fbf9f4;
+  padding-bottom: 4rem;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hero Section */
+.heroSection {
+  width: 100%;
+  min-height: 500px;
+  background-image: var(--bg-desktop);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* Dark overlay just in case image is bright */
+  box-shadow: inset 0 0 0 2000px rgba(251, 249, 244, 0.4);
+}
+
+.heroContainer {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: var(--accent-gold);
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumb span {
+  margin: 0 0.5rem;
+}
+
+.breadcrumb .current {
+  color: var(--accent-gold);
+  font-weight: 500;
+}
+
+.heroContent {
+  max-width: 600px;
+}
+
+.heroTitle {
+  font-family: var(--font-saudagar), serif;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  color: var(--text-dark);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.heroDivider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.heroDivider img {
+  width: 350px;
+  height: auto;
+  max-width: 100%;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  color: #c98e4d;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+/* Gallery Grid Section */
+.gridSection {
+  max-width: 1400px;
+  margin: 4rem auto 6rem;
+  padding: 0 5%;
+}
+
+.gridTitle {
+  text-align: center;
+  font-family: var(--font-saudagar), serif;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  color: var(--text-dark);
+  margin-bottom: 4rem;
+}
+
+/* Masonry Layout */
+.masonryGrid {
+  column-count: 3;
+  column-gap: 1.5rem;
+}
+
+.masonryItem {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.masonryItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.masonryItem img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Quote Block Item */
+.quoteBlock {
+  background-color: #1c3224; /* Dark green */
+  color: #c98e4d; /* Accent gold */
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quoteBlock svg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1.5rem;
+}
+
+.quoteText {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.quoteSignature {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.quoteDivider {
+  width: 50px;
+  height: 2px;
+  background-color: var(--accent-gold);
+  margin: 0 auto;
+}
+
+/* Image Overlay (Hover Effect) */
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 63, 35, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+}
+
+.masonryItem:hover .imageOverlay {
+  opacity: 1;
+}
+
+.imageOverlay svg {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.lightboxImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  cursor: default;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10000;
+  padding: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.closeBtn:hover {
+  transform: scale(1.1);
+}
+
+.closeBtn svg {
+  width: 36px;
+  height: 36px;
+}
+
+/* CTA Section */
+.ctaSection {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.ctaCard {
+  background-image: linear-gradient(rgba(45, 30, 20, 0.8), rgba(45, 30, 20, 0.8)), url('https://ayurvedaspa.ph/images/hot-stone-massage-near-me.webp');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 4rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.ctaLeft {
+  flex: 1;
+  min-width: 300px;
+}
+
+.ctaTitle {
+  font-family: var(--font-saudagar), serif;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.ctaDesc {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.ctaRight {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 250px;
+}
+
+.ctaBtnPrimary {
+  background-color: var(--accent-gold);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.ctaBtnPrimary:hover {
+  background-color: #a67c48;
+}
+
+.ctaBtnOutline {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.ctaBtnOutline:hover {
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Background Leaves */
+.bgLeafLeft {
+  position: absolute;
+  top: 5%;
+  left: -50px;
+  width: 300px;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .masonryGrid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    background-image: var(--bg-mobile);
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
+  .heroDivider img {
+    width: 250px;
+  }
+  .heroContent {
+    max-width: 100%;
+  }
+  .ctaCard {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ctaRight {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .masonryGrid {
+    column-count: 1;
+  }
+}

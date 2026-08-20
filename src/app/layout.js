@@ -1,9 +1,9 @@
 import { Outfit, Poppins } from "next/font/google";
 import localFont from "next/font/local";
+import Script from "next/script";
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
@@ -17,12 +17,6 @@ const poppins = Poppins({
   display: 'swap',
 });
 
-const saudagar = localFont({
-  src: "../fonts/Saudagar.ttf",
-  variable: "--font-saudagar",
-  adjustFontFallback: false,
-  fallback: ['serif'],
-});
 
 export const metadata = {
   title: "Massage Spa in Cagayan de Oro | Ayurveda Massage & Spa",
@@ -38,11 +32,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${outfit.variable} ${saudagar.variable} ${poppins.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${outfit.variable} ${poppins.variable}`} suppressHydrationWarning>
       <head>
         {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RKF067EZBY"></script>
-        <script
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-RKF067EZBY"></Script>
+        <Script
+          id="google-analytics"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -52,8 +47,22 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+        {/* Google tag (gtag.js) - AW-11000522977 */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11000522977"></Script>
+        <Script
+          id="google-analytics-aw"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-11000522977');
+            `,
+          }}
+        />
         {/* Google Tag Manager */}
-        <script
+        <Script
+          id="google-tag-manager"
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -65,7 +74,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body suppressHydrationWarning>
+      <body suppressHydrationWarning className={`${outfit.variable} ${poppins.variable}`}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
@@ -79,7 +88,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <a 
-          href="https://wa.link/xvmbyd" 
+          href="https://wa.me/+639638649151" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="whatsapp-float"

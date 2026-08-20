@@ -53,17 +53,41 @@ export default function Gallery() {
   }, [selectedImage]);
 
   return (
-    <section className="gallery-section" ref={sectionRef}>
-      <div className="gallery-container">
+    <section id="gallery-section" className="gallery-section" ref={sectionRef} style={{ position: 'relative', overflow: 'hidden' }}>
+      <style dangerouslySetInnerHTML={{ __html: `
+        .gallery-bg-leaf {
+          position: absolute;
+          bottom: 0px;
+          right: -115px;
+          width: 500px;
+          height: auto;
+          z-index: 0;
+        }
+        @media (max-width: 768px) {
+          .gallery-bg-leaf {
+            width: 250px;
+            right: -60px;
+          }
+        }
+      `}} />
+      {/* Left Bottom Corner Graphic */}
+      <img 
+        src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-bg.png" 
+        alt="decorative gallery background" 
+        className="gallery-bg-leaf"
+        loading="lazy" 
+      />
+
+      <div className="gallery-container" style={{ position: 'relative', zIndex: 1 }}>
         
-        <div className={`gallery-header ${isVisible ? 'fade-in-up' : 'opacity-0'}`}>
+        <div className="gallery-header fade-in-up">
           <p className="section-subtitle">INSIDE AYURVEDA</p>
           <h2 className="section-title">
             A Space Designed to Help You Unwind
           </h2>
         </div>
 
-        <div className={`gallery-masonry ${isVisible ? 'slide-up-fade-delay-2' : 'opacity-0'}`}>
+        <div className="gallery-masonry slide-up-fade-delay-2">
           {galleryImages.map((src, idx) => (
             <div 
               className="gallery-item-masonry" 

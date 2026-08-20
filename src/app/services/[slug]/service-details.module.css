@@ -1,0 +1,601 @@
+.pageWrapper {
+  width: 100%;
+  background-color: #fbf9f4;
+  padding-bottom: 4rem;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hero Section */
+.heroSection {
+  width: 100%;
+  min-height: 550px;
+  background-image: var(--bg-desktop);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 5rem;
+  /* Dark overlay just in case image is bright */
+  box-shadow: inset 0 0 0 2000px rgba(251, 249, 244, 0.4);
+}
+
+.heroContainer {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: var(--accent-gold);
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumb span {
+  margin: 0 0.5rem;
+}
+
+.breadcrumb .current {
+  color: var(--accent-gold);
+  font-weight: 500;
+}
+
+.heroContent {
+  max-width: 600px;
+}
+
+.heroTitle {
+  font-family: var(--font-saudagar), serif;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  color: var(--text-dark);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  color: #c98e4d;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.heroDivider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.heroDivider img {
+  width: 350px;
+  height: auto;
+  max-width: 100%;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btnPrimary {
+  background-color: #1c3224; /* Dark green from screenshot */
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btnPrimary:hover {
+  background-color: #122118;
+}
+
+.btnOutline {
+  background-color: #c39c6b;
+  color: #fff;
+  border: 1px solid #c39c6b;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btnOutline:hover {
+  background-color: var(--accent-gold);
+  color: #fff;
+}
+
+/* Features Bar */
+.featuresBar {
+  max-width: 1200px;
+  margin: -5rem auto 4rem;
+  padding: 0 5%;
+  position: relative;
+  z-index: 10;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.featureItem:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background-color: #eee;
+}
+
+.featureIcon {
+  color: #c98e4d;
+}
+
+.featureIcon svg {
+  width: 35px;
+  height: 35px;
+}
+
+.featureText {
+  display: flex;
+  flex-direction: column;
+}
+
+.featureTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.featureDesc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.3;
+}
+
+/* About Treatment Section */
+.aboutSection {
+  max-width: 1350px;
+  margin: 2rem auto 5rem;
+  padding: 0 5%;
+}
+
+.aboutCard {
+  border: 2px solid #e0c8b0;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  background-image: url("https://ayurvedaspa.ph/images/ayurveda-spa-massage-massage-options-bg-desk--.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aboutLeft {
+  flex: 1;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.aboutTitle {
+  font-family: var(--font-saudagar), serif;
+  font-size: 2.5rem;
+  color: #1c3224;
+  margin-bottom: 0.5rem;
+}
+
+.aboutDivider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.aboutDividerLine {
+  height: 1px;
+  background-color: var(--accent-gold);
+  width: 50px;
+  opacity: 0.5;
+}
+
+.aboutDesc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 550px;
+}
+
+.aboutSignature {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #c98e4d;
+  font-style: italic;
+}
+
+
+/* Benefits Section */
+.benefitsSection {
+  max-width: 1200px;
+  margin: 0 auto 5rem;
+  padding: 0 5%;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-family: var(--font-saudagar), serif;
+  font-size: 2.2rem;
+  color: #1c3224;
+  margin-bottom: 0.5rem;
+}
+
+.sectionDivider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  position: relative;
+}
+
+.benefitItem {
+  position: relative;
+}
+
+.benefitItem:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -1rem;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background-color: #eee;
+}
+
+.benefitIcon {
+  color: #c98e4d;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.benefitIcon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.benefitTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.benefitDesc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* Options Section */
+.optionsSection {
+  max-width: 1200px;
+  margin: 0 auto 6rem;
+  padding: 0 5%;
+  text-align: center;
+}
+
+.optionsGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.optionCard {
+  width: 100%;
+  max-width: 850px;
+  /* background-color: #fff; */
+  background-image: var(--bg-desk);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.optionLeft {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.optionDuration {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.optionPrice {
+  font-family: var(--font-saudagar), serif;
+  font-size: 2.5rem;
+  color: #c98e4d;
+  margin-bottom: 1.5rem;
+}
+
+.optionList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.optionList li {
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.optionList li svg {
+  color: #c98e4d;
+  flex-shrink: 0;
+}
+
+/* Other Services Grid */
+.otherServicesSection {
+  max-width: 1400px;
+  margin: 6rem auto;
+  padding: 0 5%;
+}
+
+.therapiesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.therapyCard {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.therapyCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.therapyImage {
+  position: relative;
+  height: 180px;
+  width: 100%;
+}
+
+.therapyImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.therapyIconWrapper {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  color: var(--accent-gold);
+}
+
+.therapyContent {
+  padding: 2.5rem 1.5rem 1.5rem;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.therapyTitle {
+  font-family: var(--font-saudagar), serif;
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.therapyMeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.therapyBtn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+
+.therapyBtn:hover {
+  background-color: var(--accent-gold);
+  color: #fff;
+}
+
+/* Background Leaves */
+.bgLeafLeft {
+  position: absolute;
+  top: 5%;
+  left: -50px;
+  width: 300px;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .therapiesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .featuresBar {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    margin-top: -2rem;
+  }
+  .featureDivider {
+    width: 50%;
+    height: 1px;
+  }
+  .benefitsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    background-image: var(--bg-mobile);
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
+  .heroDivider img {
+    width: 250px;
+  }
+  .heroButtons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .heroButtons a {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+  .heroContent {
+    max-width: 100%;
+  }
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+  .featureItem::after {
+    display: none;
+  }
+  .benefitItem::after {
+    display: none;
+  }
+  .optionCard {
+    background-image: var(--bg-mob);
+    text-align: center;
+    padding: 2rem 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    min-height: 500px;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+  .optionList li {
+    justify-content: center;
+  }
+  .therapiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aboutCard {
+    flex-direction: column;
+    background-image: url("https://ayurvedaspa.ph/images/ayurveda-spa-massage-massage-options-bg-mob--.webp");
+    min-height: 650px;
+  }
+  .aboutLeft {
+    padding: 2.5rem 1.5rem;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .therapiesGrid {
+    grid-template-columns: 1fr;
+  }
+  .aboutTitle {
+    font-size: 1.9rem;
+  }
+}

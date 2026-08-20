@@ -3,11 +3,6 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 export default function Hero() {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
 
   return (
     <section className="hero-section">
@@ -17,7 +12,7 @@ export default function Hero() {
 
       <div className="hero-container">
         {/* Left Side: Content */}
-        <div className={`hero-content ${isLoaded ? 'fade-in-up' : ''}`}>
+        <div className="hero-content fade-in-up">
           <p className="hero-subtitle">WELCOME TO AYURVEDA MASSAGE & SPA</p>
           <h1 className="hero-title">
             Massage Spa in<br />
@@ -30,7 +25,7 @@ export default function Hero() {
           </p>
           
           <div className="hero-buttons">
-            <Link href="https://wa.link/xvmbyd" className="btn-primary">
+            <Link href="https://wa.me/+639638649151" className="btn-primary">
               BOOK APPOINTMENT
             </Link>
             <Link href="/massage-cagayan-de-oro" className="btn-secondary">
@@ -50,7 +45,7 @@ export default function Hero() {
         </div>
 
         {/* Right Side: Image */}
-        <div className={`hero-image-wrapper ${isLoaded ? 'fade-in-right' : ''}`}>
+        <div className="hero-image-wrapper fade-in-right">
           <img 
             src="https://ayurvedaspa.ph/images/affordable-massage-cagayan-de-oro.png" 
             alt="affordable massage cagayan de oro" 

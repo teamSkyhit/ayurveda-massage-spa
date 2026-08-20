@@ -73,7 +73,7 @@ export default function About() {
   }, []);
 
   return (
-    <section className="about-section" ref={sectionRef}>
+    <section id="about-section" className="about-section" ref={sectionRef}>
       {/* Top Features Bar */}
       <div className="features-bar">
         <div className="feature-item">
@@ -126,7 +126,7 @@ export default function About() {
         </div>
 
         {/* Left Side: Image */}
-        <div className={`about-image-wrapper ${isVisible ? 'slide-up-fade' : 'opacity-0'}`}>
+        <div className="about-image-wrapper slide-up-fade">
           <img 
             src="https://ayurvedaspa.ph/images/affordable-massage-cdo.webp" 
             alt="home service massage cdo" 
@@ -169,7 +169,7 @@ export default function About() {
         </div>
 
         {/* Right Side: Content */}
-        <div className={`about-content ${isVisible ? 'slide-up-fade-delay' : 'opacity-0'}`}>
+        <div className="about-content slide-up-fade-delay">
           <p className="section-subtitle" style={{ color: '#c39c6b' }}>ABOUT AYURVEDA</p>
           <h2 className="section-title" style={{ fontFamily: 'var(--font-saudagar)', fontSize: '3.5rem' }}>
             Massage Treatments in Cagayan de Oro
@@ -178,14 +178,14 @@ export default function About() {
             Ayurveda began with a simple idea — that everyone deserves an hour of genuine quiet. Our rooms are warm and softly lit, our oils are chosen with care, and every session is shaped around how you'd like to feel that day. <br /> From the moment you arrive, our therapists take the time to listen. Pressure, pace and focus are adjusted to your comfort, so you can settle in, breathe slowly and leave feeling looked after.
           </p>
           
-          <Link href="https://wa.link/xvmbyd" className="btn-primary" style={{ marginTop: '1rem', display: 'inline-block' }}>
+          <Link href="https://wa.me/+639638649151" className="btn-primary" style={{ marginTop: '1rem', display: 'inline-block' }}>
             More About Us
           </Link>
         </div>
       </div>
 
       {/* Counters Section */}
-      <div className={`about-counters ${isVisible ? 'slide-up-fade-delay-1' : 'opacity-0'}`}>
+      <div className="about-counters slide-up-fade-delay-1">
         <div className="counter-item">
           <h3><CountUp end={100} suffix="+" isVisible={isVisible} /></h3>
           <p>Treatments per month</p>

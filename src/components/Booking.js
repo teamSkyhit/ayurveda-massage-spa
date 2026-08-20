@@ -116,8 +116,8 @@ export default function Booking() {
 };
 
   return (
-    <section className="booking-section" ref={sectionRef} id="book">
-      <div className={`booking-container ${isVisible ? 'fade-in-up' : 'opacity-0'}`}>
+    <section id="booking-section" className="booking-section" ref={sectionRef}>
+      <div className="booking-container fade-in-up">
         
         {/* Left Image */}
         <div className="booking-image-wrapper">
@@ -162,8 +162,14 @@ export default function Booking() {
                 type="tel" 
                 name="mobile_number" 
                 placeholder="Your Phone" 
+                defaultValue="+63"
                 required 
                 className="form-input" 
+                onKeyPress={(e) => {
+                  if (!/[0-9+\- ()]/.test(e.key)) {
+                    e.preventDefault();
+                  }
+                }}
               />
               <input 
                 type="email" 

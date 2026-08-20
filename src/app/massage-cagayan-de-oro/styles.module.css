@@ -88,9 +88,9 @@
 }
 
 .btnOutline {
-  background-color: transparent;
-  color: #113f23;
-  border: 1px solid #113f23;
+  background-color: #c39c6b;
+  color: #fff;
+  border: 1px solid #c39c6b;
   padding: 0.8rem 2rem;
   border-radius: 50px;
   font-weight: 600;
@@ -370,9 +370,10 @@
   .heroButtons {
     flex-direction: column;
     width: 100%;
-    max-width: 300px;
   }
-  .btnSolid, .btnOutline {
+  .heroButtons a {
+    width: 100%;
+    max-width: 280px;
     justify-content: center;
   }
   .featuresGrid {

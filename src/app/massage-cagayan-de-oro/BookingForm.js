@@ -7,7 +7,8 @@ import styles from './styles.module.css';
 export default function BookingForm() {
   const [formData, setFormData] = useState({
     name: '',
-    mobile: '',
+    mobile: '+63',
+    email: '',
     treatment: '',
     message: ''
   });
@@ -19,9 +20,14 @@ export default function BookingForm() {
   });
 
   const handleChange = (e) => {
+    let value = e.target.value;
+    if (e.target.name === 'mobile') {
+      // Allow only numbers, plus, minus, spaces, brackets
+      value = value.replace(/[^0-9+\- ()]/g, '');
+    }
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: value
     });
   };
 
@@ -78,31 +84,25 @@ export default function BookingForm() {
   const templateParams = {
     from_name: formData.name,
     mobile_number: formData.mobile,
+    user_email: formData.email,
     treatment: formData.treatment,
     message: formData.message,
     page_url: window.location.href,
   };
 
   try {
-    // 1. Send to EmailJS
-    const response = await emailjs.send(
-      SERVICE_ID,
-      TEMPLATE_ID,
-      templateParams,
-      PUBLIC_KEY
-    );
-
-    console.log('EmailJS SUCCESS!', response.status, response.text);
-
-    // 2. Send to Google Sheet
-    await fetch(GOOGLE_SHEET_URL, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: {
-        'Content-Type': 'text/plain;charset=utf-8',
-      },
-      body: JSON.stringify(templateParams),
-    });
+    // Run both network requests concurrently to speed up submission
+    await Promise.all([
+      emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY),
+      fetch(GOOGLE_SHEET_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8',
+        },
+        body: JSON.stringify(templateParams),
+      })
+    ]);
 
     // 3. Success
     setStatus({
@@ -113,7 +113,8 @@ export default function BookingForm() {
 
     setFormData({
       name: '',
-      mobile: '',
+      mobile: '+63',
+      email: '',
       treatment: '',
       message: ''
     });
@@ -134,16 +135,17 @@ export default function BookingForm() {
 
   return (
     <form className={styles.bookingForm} onSubmit={handleSubmit}>
+      <input 
+        type="text" 
+        name="name"
+        placeholder="Full Name" 
+        className={styles.formInput} 
+        required 
+        value={formData.name}
+        onChange={handleChange}
+        style={{ marginBottom: '1rem' }}
+      />
       <div className={styles.formRow}>
-        <input 
-          type="text" 
-          name="name"
-          placeholder="Full Name" 
-          className={styles.formInput} 
-          required 
-          value={formData.name}
-          onChange={handleChange}
-        />
         <input 
           type="tel" 
           name="mobile"
@@ -151,6 +153,20 @@ export default function BookingForm() {
           className={styles.formInput} 
           required 
           value={formData.mobile}
+          onChange={handleChange}
+          onKeyPress={(e) => {
+            if (!/[0-9+\- ()]/.test(e.key)) {
+              e.preventDefault();
+            }
+          }}
+        />
+        <input 
+          type="email" 
+          name="email"
+          placeholder="Email Address" 
+          className={styles.formInput} 
+          required 
+          value={formData.email}
           onChange={handleChange}
         />
       </div>

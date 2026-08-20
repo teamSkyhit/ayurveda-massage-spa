@@ -1,7 +1,32 @@
 export default function ProcessSection() {
   return (
-    <section className="process-section">
-      <div className="process-container">
+    <section className="process-section" style={{ position: 'relative' }}>
+      <style dangerouslySetInnerHTML={{ __html: `
+        .process-bg-leaf {
+          position: absolute;
+          top: -120px;
+          left: -50px;
+          width: 280px;
+          height: auto;
+          z-index: 10;
+          opacity: 1;
+          pointer-events: none;
+        }
+        @media (max-width: 768px) {
+          .process-bg-leaf {
+            width: 150px;
+            top: -60px;
+            left: -20px;
+          }
+        }
+      `}} />
+      <img 
+        src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-process-bg-01.webp" 
+        alt="decorative process background" 
+        className="process-bg-leaf"
+        loading="lazy" 
+      />
+      <div className="process-container" style={{ position: 'relative', zIndex: 1 }}>
         <div className="process-header">
           <p className="section-subtitle">OUR PROCESS</p>
           <h2 className="section-title">Your Journey with Us</h2>
