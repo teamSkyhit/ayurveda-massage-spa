@@ -16,17 +16,17 @@ export default function Header() {
   };
 
   const serviceLinks = [
-    { title: "Ayur Signature Massage", href: "/services/ayur-signature-massage" },
-    { title: "Hawaiian Veda Massage", href: "/services/hawaiian-veda-massage" },
-    { title: "Classic Swedish Massage", href: "/services/classic-swedish-massage" },
-    { title: "Royal Thai Massage", href: "/services/royal-thai-massage" },
-    { title: "Deep Tissue Massage", href: "/services/deep-tissue-massage" },
-    { title: "Lymphatic Massage", href: "/services/lymphatic-massage" },
-    { title: "Herbal Ayurvedic Massage", href: "/services/herbal-ayurvedic-massage" },
-    { title: "Hot Stone Massage", href: "/services/hot-stone-massage" },
-    { title: "Cupping / Ventosa Massage", href: "/services/ventosa-massage" },
-    { title: "Foot, Hand & Back Massage", href: "/services/foot-hand-back-massage" },
-    { title: "Home & Hotel Services", href: "/services/room-and-hotel-spa" }
+    { title: "Ayur Signature Massage", href: "/ayur-signature-massage-cagayan-de-oro" },
+    { title: "Hawaiian Veda Massage", href: "/hawaiian-veda-massage-cagayan-de-oro" },
+    { title: "Classic Swedish Massage", href: "/classic-swedish-massage-cagayan-de-oro" },
+    { title: "Royal Thai Massage", href: "/royal-thai-massage-cagayan-de-oro" },
+    { title: "Deep Tissue Massage", href: "/deep-tissue-massage-cagayan-de-oro" },
+    { title: "Lymphatic Massage", href: "/lymphatic-massage-cagayan-de-oro" },
+    { title: "Herbal Ayurvedic Massage", href: "/herbal-ayurvedic-massage-cagayan-de-oro" },
+    { title: "Hot Stone Massage", href: "/hot-stone-massage-cagayan-de-oro" },
+    { title: "Cupping / Ventosa Massage", href: "/cupping-ventosa-massage-cagayan-de-oro" },
+    { title: "Foot, Hand & Back Massage", href: "/foot-hand-back-massage-cagayan-de-oro" },
+    { title: "Home & Hotel Services", href: "/home-hotel-massage-cagayan-de-oro" }
   ];
 
   return (
@@ -64,7 +64,7 @@ export default function Header() {
         {/* Right Navigation & Button (Desktop) */}
         <nav className="nav-group nav-right desktop-only">
           <Link href="/gallery" className="nav-link">Gallery</Link>
-          <Link href="/contact-us" className="nav-link">Contact</Link>
+          <Link href="/contact" className="nav-link">Contact</Link>
           <Link href="https://wa.me/+639638649151" className="btn-primary">BOOK APPOINTMENT</Link>
         </nav>
 
@@ -105,7 +105,7 @@ export default function Header() {
           </div>
 
           <Link href="/gallery" className="mobile-link" onClick={toggleMenu}>Gallery</Link>
-          <Link href="/contact-us" className="mobile-link" onClick={toggleMenu}>Contact</Link>
+          <Link href="/contact" className="mobile-link" onClick={toggleMenu}>Contact</Link>
           <Link href="https://wa.me/+639638649151" className="btn-primary" onClick={toggleMenu}>BOOK APPOINTMENT</Link>
         </nav>
       </div>

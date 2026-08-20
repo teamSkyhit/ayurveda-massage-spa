@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import styles from './about.module.css';
 
+export const metadata = {
+  title: 'About Ayurveda Massage & Spa in Cagayan de Oro',
+  description: 'Learn about Ayurveda Massage & Spa in Cagayan de Oro and our range of relaxing massage and wellness experiences.',
+};
+
 export default function AboutUs() {
   return (
     <div className={styles.aboutPage}>

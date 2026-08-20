@@ -3,8 +3,8 @@ import styles from './services.module.css';
 import { servicesData } from '../../data/servicesData';
 
 export const metadata = {
-  title: "Our Services | Ayurveda Massage & Spa",
-  description: "Explore our range of authentic Ayurvedic massage therapies designed to relax your body, calm your mind, and restore your natural balance.",
+  title: "Massage Services in Cagayan de Oro | Ayurveda Spa",
+  description: "Explore massage services in Cagayan de Oro including Swedish, Thai, Ayurvedic, Deep Tissue, Hot Stone and more.",
 };
 
 export default function ServicesPage() {
@@ -136,7 +136,7 @@ export default function ServicesPage() {
                   <span className={styles.therapyPrice}>{therapy.priceRange.split(' ')[0]}</span>
                 </div>
                 <p className={styles.therapyDesc}>{therapy.aboutText.substring(0, 80)}...</p>
-                <Link href={`/services/${therapy.slug}`} className={styles.therapyBtn}>
+                <Link href={`/${therapy.slug}`} className={styles.therapyBtn}>
                   View Details &rarr;
                 </Link>
               </div>

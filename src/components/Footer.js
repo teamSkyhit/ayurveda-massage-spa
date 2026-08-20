@@ -27,7 +27,7 @@ export default function Footer() {
             <Link href="/services" className="footer-link">Services</Link>
             <Link href="/about-us" className="footer-link">About</Link>
             <Link href="/gallery" className="footer-link">Gallery</Link>
-            <Link href="/contact-us" className="footer-link">Contact</Link>
+            <Link href="/contact" className="footer-link">Contact</Link>
           </nav>
         </div>
 
@@ -35,10 +35,10 @@ export default function Footer() {
         <div className="footer-col">
           <h4 className="footer-subtitle">TREATMENTS</h4>
           <nav className="footer-nav">
-            <Link href="/services/ayurvedic-massage" className="footer-link">Ayur Signature Massage</Link>
-            <Link href="/services/swedish-massage" className="footer-link">Swedish Massage</Link>
-            <Link href="/services/thai-massage" className="footer-link">Thai Massage</Link>
-            <Link href="/services/hot-stone-massage" className="footer-link">Hot Stone Massage</Link>
+            <Link href="/ayur-signature-massage-cagayan-de-oro" className="footer-link">Ayur Signature Massage</Link>
+            <Link href="/classic-swedish-massage-cagayan-de-oro" className="footer-link">Swedish Massage</Link>
+            <Link href="/royal-thai-massage-cagayan-de-oro" className="footer-link">Thai Massage</Link>
+            <Link href="/hot-stone-massage-cagayan-de-oro" className="footer-link">Hot Stone Massage</Link>
             <Link href="/services" className="footer-link">View All Treatments</Link>
           </nav>
         </div>

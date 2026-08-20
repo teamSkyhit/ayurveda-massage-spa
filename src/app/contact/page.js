@@ -3,8 +3,8 @@ import styles from './contact.module.css';
 import ContactForm from './ContactForm';
 
 export const metadata = {
-  title: "Contact Us | Ayurveda Massage & Spa",
-  description: "Get in touch with Ayurveda Massage & Spa. We're here to help you relax, renew & rejuvenate. Book an appointment today.",
+  title: "Contact Ayurveda Massage & Spa in Cagayan de Oro",
+  description: "Contact Ayurveda Massage & Spa in Cagayan de Oro for bookings, massage services, location details and opening hours.",
 };
 
 export default function ContactUsPage() {

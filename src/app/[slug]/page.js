@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import styles from './service-details.module.css';
-import Booking from '../../../components/Booking';
-import { servicesData } from '../../../data/servicesData';
+import Booking from '../../components/Booking';
+import ServiceSeoAccordion from '../../components/ServiceSeoAccordion';
+import { servicesData } from '../../data/servicesData';
 
 // Generate static routes for all 11 services
 export function generateStaticParams() {
@@ -11,14 +12,17 @@ export function generateStaticParams() {
   }));
 }
 
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
   const service = servicesData.find((s) => s.slug === resolvedParams.slug);
   if (!service) return { title: 'Service Not Found' };
   
   return {
-    title: `${service.title} | Ayurveda Massage & Spa`,
-    description: service.aboutText.substring(0, 160),
+    title: service.metaTitle || `${service.title} | Ayurveda Massage & Spa`,
+    description: service.metaDesc || service.aboutText.substring(0, 160),
+    keywords: service.metaKeywords || '',
   };
 }
 
@@ -63,7 +67,7 @@ export default async function SingleServicePage({ params }) {
           </div>
 
           <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>{service.title}</h1>
+            <h1 className={styles.heroTitle}>{service.heroTitle || service.title}</h1>
             <div className={styles.heroDivider}>
               <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-underline.png" alt="divider" />
             </div>
@@ -240,7 +244,7 @@ export default async function SingleServicePage({ params }) {
                   <span>|</span>
                   <span style={{ color: 'var(--text-dark)', fontWeight: '700' }}>{other.priceRange.split(' ')[0]}</span>
                 </div>
-                <Link href={`/services/${other.slug}`} className={styles.therapyBtn}>
+                <Link href={`/${other.slug}`} className={styles.therapyBtn}>
                   View Details
                 </Link>
               </div>
@@ -251,6 +255,14 @@ export default async function SingleServicePage({ params }) {
 
       {/* Standard Booking Component (Replaces generic CTA) */}
       <Booking />
+
+      {service.accordion && (
+        <ServiceSeoAccordion 
+          title={service.accordion.title} 
+          text={service.accordion.text} 
+          benefits={service.accordion.benefits} 
+        />
+      )}
 
     </div>
   );

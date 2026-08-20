@@ -3,8 +3,8 @@ import styles from './gallery.module.css';
 import GalleryClient from './GalleryClient';
 
 export const metadata = {
-  title: "Gallery | Ayurveda Massage & Spa",
-  description: "Browse our gallery to see the peaceful and relaxing environment we've created for your wellness journey.",
+  title: "Ayurveda Massage & Spa Gallery | Cagayan de Oro",
+  description: "Explore photos of Ayurveda Massage & Spa in Cagayan de Oro, including our spa environment, treatments and facilities.",
 };
 
 export default function GalleryPage() {
