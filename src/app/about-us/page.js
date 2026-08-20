@@ -13,13 +13,13 @@ export default function AboutUs() {
       {/* Decorative Background Leaves */}
       <img 
         src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-bg.png" 
-        alt="decorative left leaf" 
+        alt="massage-clinic-Cagayan-de-Oro" 
         className={styles.bgLeafLeft} 
         loading="lazy" 
       />
       <img 
         src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-process-bg-01.webp" 
-        alt="decorative right leaf" 
+        alt="CDO-wellness-spa" 
         className={styles.bgLeafRight} 
         loading="lazy" 
       />
@@ -46,7 +46,7 @@ export default function AboutUs() {
               <span>Massage & Spa</span>
             </h1>
             <div className={styles.heroDivider}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-underline.png" alt="divider" />
+              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-underline.png" alt="relaxation-massage-Cagayan-de-Oro" />
             </div>
             <p className={styles.heroDesc}>
               At Ayurveda Massage & Spa, we bring the timeless wisdom of Ayurveda into a modern, tranquil space. Our mission is simple – to help you relax, heal, and reconnect with your best self.
@@ -72,7 +72,7 @@ export default function AboutUs() {
       {/* Our Story Section */}
       <section className={styles.storySection}>
         <div className={styles.storyLeft}>
-          <img src="https://ayurvedaspa.ph/images/cdo-massage.webp" alt="Spa Reception" />
+          <img src="https://ayurvedaspa.ph/images/cdo-massage.webp" alt="massage-parlor-near-CDO" />
         </div>
         <div className={styles.storyRight}>
           <p className={styles.subtitle}>OUR STORY</p>
@@ -93,7 +93,7 @@ export default function AboutUs() {
           
           <div className={styles.featureItem}>
             <div className={styles.featureIcon}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-ayurvedic-wisdom.png" alt="Ayurvedic Wisdom" />
+              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-ayurvedic-wisdom.png" alt="top-rated-spa-Cagayan-de-Oro" />
             </div>
             <h3 className={styles.featureTitle}>Ayurvedic Wisdom</h3>
             <p className={styles.featureDesc}>Rooted in ancient healing practices for natural wellness.</p>
@@ -101,7 +101,7 @@ export default function AboutUs() {
           
           <div className={styles.featureItem}>
             <div className={styles.featureIcon}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-natural-safe.png" alt="Natural & Safe" />
+              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-natural-safe.png" alt="massage-therapist-CDO" />
             </div>
             <h3 className={styles.featureTitle}>Natural & Safe</h3>
             <p className={styles.featureDesc}>We use natural herbal oils that nourish and revitalize your body.</p>
@@ -109,7 +109,7 @@ export default function AboutUs() {
           
           <div className={styles.featureItem}>
             <div className={styles.featureIcon}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-professional-care.png" alt="Professional Care" />
+              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-professional-care.png" alt="wellness-center-near-me" />
             </div>
             <h3 className={styles.featureTitle}>Professional Care</h3>
             <p className={styles.featureDesc}>Skilled and trained therapists dedicated to your comfort.</p>
@@ -117,7 +117,7 @@ export default function AboutUs() {
           
           <div className={styles.featureItem}>
             <div className={styles.featureIcon}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-peaceful-space.png" alt="Peaceful Space" />
+              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-peaceful-space.png" alt="signature-massage-CDO" />
             </div>
             <h3 className={styles.featureTitle}>Peaceful Space</h3>
             <p className={styles.featureDesc}>A calm and private environment to relax, renew, and recharge.</p>
@@ -129,7 +129,7 @@ export default function AboutUs() {
       {/* Environment Section */}
       <section className={styles.environmentSection}>
         <div className={styles.envLeft}>
-          <img src="https://ayurvedaspa.ph/images/massage-spa-cdo.webp" alt="Massage Room" />
+          <img src="https://ayurvedaspa.ph/images/massage-spa-cdo.webp" alt="in-room-massage-service-CDO" />
         </div>
         <div className={styles.envRight}>
           <p className={styles.subtitle}>OUR ENVIRONMENT</p>

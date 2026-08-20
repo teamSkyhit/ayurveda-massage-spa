@@ -29,8 +29,8 @@ export default function ServicesPage() {
       <section 
         className={styles.heroSection}
         style={{
-          '--bg-desktop': "url('https://ayurvedaspa.ph/images/ayurveda-spa-massage-service-page-desk-banner.webp')",
-          '--bg-mobile': "url('https://ayurvedaspa.ph/images/ayurveda-spa-massage-service-page-mob-banner.webp')"
+          '--bg-desktop': "url('https://ayurvedaspa.ph/images/signature-massage-CDO.webp')",
+          '--bg-mobile': "url('https://ayurvedaspa.ph/images/in-room-massage-service-CDO.webp')"
         }}
       >
         <div className={styles.heroContainer}>
@@ -74,7 +74,7 @@ export default function ServicesPage() {
           
           <div className={styles.featureItem}>
             <div className={styles.featureIcon}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-ayurvedic-wisdom.png" alt="Ayurvedic Wisdom" />
+              <img src="https://ayurvedaspa.ph/images/relaxation-massage-Cagayan-de-Oro.png" alt="Ayurvedic Wisdom" />
             </div>
             <h3 className={styles.featureTitle}>Natural & Authentic</h3>
             <p className={styles.featureDesc}>Pure herbal oils and time-honored Ayurvedic techniques.</p>
@@ -82,7 +82,7 @@ export default function ServicesPage() {
           
           <div className={styles.featureItem}>
             <div className={styles.featureIcon}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-natural-safe.png" alt="Natural and Safe" />
+              <img src="https://ayurvedaspa.ph/images/massage-parlor-near-CDO.png" alt="Natural and Safe" />
             </div>
             <h3 className={styles.featureTitle}>Skilled Therapists</h3>
             <p className={styles.featureDesc}>Trained professionals dedicated to your well-being.</p>
@@ -90,7 +90,7 @@ export default function ServicesPage() {
           
           <div className={styles.featureItem}>
             <div className={styles.featureIcon}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-professional-care.png" alt="Professional Care" />
+              <img src="https://ayurvedaspa.ph/images/top-rated-spa-Cagayan-de-Oro.png" alt="Professional Care" />
             </div>
             <h3 className={styles.featureTitle}>Personalized Care</h3>
             <p className={styles.featureDesc}>Every session is tailored to your body's unique needs.</p>
@@ -98,7 +98,7 @@ export default function ServicesPage() {
           
           <div className={styles.featureItem}>
             <div className={styles.featureIcon}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-peaceful-space.png" alt="Peaceful Space" />
+              <img src="https://ayurvedaspa.ph/images/massage-therapist-CDO.png" alt="Peaceful Space" />
             </div>
             <h3 className={styles.featureTitle}>Relax. Heal. Reconnect.</h3>
             <p className={styles.featureDesc}>A peaceful space to restore your inner balance.</p>

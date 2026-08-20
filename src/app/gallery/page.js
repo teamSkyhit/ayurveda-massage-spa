@@ -12,17 +12,17 @@ export default function GalleryPage() {
   // 10 placeholder images representing the gallery grid items
   // I am inserting a specific string "QUOTE_BLOCK" in the array so we can render the dark green quote box in the middle of the masonry layout.
   const galleryItems = [
-    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-001.webp", alt: "Spa Gallery 1" },
-    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-002.webp", alt: "Spa Gallery 2" },
-    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-003.webp", alt: "Spa Gallery 3" },
-    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-004.webp", alt: "Spa Gallery 4" },
-    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-005.webp", alt: "Spa Gallery 5" },
+    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-001.webp", alt: "budget-friendly-massage-CDO" },
+    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-002.webp", alt: "walk-in-massage-promo-CDO" },
+    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-003.webp", alt: "massage-package-deals-Cagayan-de-Oro" },
+    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-004.webp", alt: "student-discount-massage-CDO" },
+    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-005.webp", alt: "value-spa-treatment-near-me" },
     { type: 'quote' }, // The dark green quote block
-    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-006.webp", alt: "Spa Gallery 6" },
-    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-007.webp", alt: "Spa Gallery 7" },
-    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-008.webp", alt: "Spa Gallery 8" },
-    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-009.webp", alt: "Spa Gallery 9" },
-    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-010.webp", alt: "Spa Gallery 10" },
+    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-006.webp", alt: "low-cost-body-massage-CDO" },
+    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-007.webp", alt: "Swedish-relaxation-massage-CDO" },
+    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-008.webp", alt: "signature-deep-tissue-treatment" },
+    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-009.webp", alt: "ayurvedic-body-treatment-near-me" },
+    { type: 'image', src: "https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-010.webp", alt: "hot-stone-therapy-CDO" },
   ];
 
   return (
@@ -31,7 +31,7 @@ export default function GalleryPage() {
       {/* Decorative Background Leaf */}
       <img 
         src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-bg.png" 
-        alt="decorative left leaf" 
+        alt="deep-tissue-muscle-relief-CDO" 
         className={styles.bgLeafLeft} 
         loading="lazy" 
       />
@@ -40,8 +40,8 @@ export default function GalleryPage() {
       <section 
         className={styles.heroSection}
         style={{
-          '--bg-desktop': "url('https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-desk-banner.webp')",
-          '--bg-mobile': "url('https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-mob-banner.webp')"
+          '--bg-desktop': "url('https://ayurvedaspa.ph/images/hot-stone-therapy-CDO.webp')",
+          '--bg-mobile': "url('https://ayurvedaspa.ph/images/ayurvedic-body-treatment-near-me.webp')"
         }}
       >
         <div className={styles.heroContainer}>
@@ -55,7 +55,7 @@ export default function GalleryPage() {
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>Gallery</h1>
             <div className={styles.heroDivider}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-underline.png" alt="divider" />
+              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-underline.png" alt="sports-recovery-deep-tissue-massage" />
             </div>
             <p className={styles.heroSubtitle}>Moments of calm, care, and wellness.</p>
           </div>

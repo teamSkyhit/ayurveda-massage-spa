@@ -180,7 +180,7 @@ export default function Treatments() {
       
       {/* Corner Graphic */}
       <img 
-        src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-services-bg-01.webp" 
+        src="https://ayurvedaspa.ph/images/AYURVEDHA-MASSAGE-SPA-LOGO-001.webp" 
         alt="decorative corner" 
         style={{ position: 'absolute', top: '0px', right: '-50px', width: '300px', height: 'auto', zIndex: 1, opacity: 0.6 }} 
         loading="lazy" 

@@ -43,7 +43,7 @@ export default async function SingleServicePage({ params }) {
       {/* Decorative Background Leaf */}
       <img 
         src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-bg.png" 
-        alt="decorative left leaf" 
+        alt="traditional-Thai-spa-treatment" 
         className={styles.bgLeafLeft} 
         loading="lazy" 
       />
@@ -69,7 +69,7 @@ export default async function SingleServicePage({ params }) {
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>{service.heroTitle || service.title}</h1>
             <div className={styles.heroDivider}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-underline.png" alt="divider" />
+              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-underline.png" alt="Thai-therapist-Cagayan-de-Oro" />
             </div>
             <p className={styles.heroSubtitle}>{service.subtitle}</p>
             <div className={styles.heroButtons}>
@@ -143,7 +143,7 @@ export default async function SingleServicePage({ params }) {
           <div className={styles.aboutLeft}>
             <h2 className={styles.aboutTitle}>About the Treatment</h2>
             <div className={styles.aboutDivider}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-underline.png" alt="divider" style={{ width: '200px' }} />
+              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-underline.png" alt="oriental-massage-near-me" style={{ width: '200px' }} />
             </div>
             <p className={styles.aboutDesc}>{service.aboutText}</p>
             <div className={styles.aboutSignature}>{service.signature}</div>
@@ -162,10 +162,10 @@ export default async function SingleServicePage({ params }) {
         <div className={styles.benefitsGrid}>
           {service.benefits.map((benefit, idx) => {
             const icons = [
-              "https://ayurvedaspa.ph/images/ayurveda-spa-massage-ayurvedic-wisdom.png",
-              "https://ayurvedaspa.ph/images/ayurveda-spa-massage-natural-safe.png",
-              "https://ayurvedaspa.ph/images/ayurveda-spa-massage-professional-care.png",
-              "https://ayurvedaspa.ph/images/ayurveda-spa-massage-peaceful-space.png"
+              "https://ayurvedaspa.ph/images/relaxation-massage-Cagayan-de-Oro.png",
+              "https://ayurvedaspa.ph/images/massage-parlor-near-CDO.png",
+              "https://ayurvedaspa.ph/images/top-rated-spa-Cagayan-de-Oro.png",
+              "https://ayurvedaspa.ph/images/massage-therapist-CDO.png"
             ];
             return (
             <div className={styles.benefitItem} key={idx}>
@@ -184,7 +184,7 @@ export default async function SingleServicePage({ params }) {
       <section className={styles.optionsSection}>
         <h2 className={styles.sectionTitle}>Massage Options</h2>
         <div className={styles.sectionDivider} style={{ textAlign: 'center' }}>
-          <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-underline.png" alt="divider" style={{ width: '200px', margin: '0 auto' }} />
+          <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-underline.png" alt="traditional-Filipino-hilot-massage" style={{ width: '200px', margin: '0 auto' }} />
         </div>
         
         <div className={styles.optionsGrid}>
@@ -193,8 +193,8 @@ export default async function SingleServicePage({ params }) {
               className={styles.optionCard} 
               key={idx}
               style={{
-                '--bg-desk': `url(https://ayurvedaspa.ph/images/ayurveda-spa-massage-massage-options-bg-desk-01.webp)`,
-                '--bg-mob': `url(https://ayurvedaspa.ph/images/ayurveda-spa-massage-massage-options-bg-mob-01.webp)`
+                '--bg-desk': `url(https://ayurvedaspa.ph/images/staycation-massage-service-CDO.webp)`,
+                '--bg-mob': `url(https://ayurvedaspa.ph/images/massage-for-hotel-guests-Cagayan-de-Oro.webp)`
               }}
             >
               <div className={styles.optionLeft}>
@@ -223,7 +223,7 @@ export default async function SingleServicePage({ params }) {
       <section className={styles.otherServicesSection}>
         <h2 className={styles.sectionTitle} style={{ textAlign: 'center' }}>Explore Other Therapies</h2>
         <div className={styles.sectionDivider} style={{ textAlign: 'center' }}>
-          <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-underline.png" alt="divider" style={{ width: '200px', margin: '0 auto' }} />
+          <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-underline.png" alt="hilot-massage-CDO" style={{ width: '200px', margin: '0 auto' }} />
         </div>
         
         <div className={styles.therapiesGrid}>

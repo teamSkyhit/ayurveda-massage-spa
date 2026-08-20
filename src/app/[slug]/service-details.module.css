@@ -198,7 +198,7 @@
   border-radius: 30px;
   overflow: hidden;
   display: flex;
-  background-image: url("https://ayurvedaspa.ph/images/ayurveda-spa-massage-massage-options-bg-desk--.webp");
+  background-image: url("https://ayurvedaspa.ph/images/on-call-massage-CDO.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -580,7 +580,7 @@
   }
   .aboutCard {
     flex-direction: column;
-    background-image: url("https://ayurvedaspa.ph/images/ayurveda-spa-massage-massage-options-bg-mob--.webp");
+    background-image: url("https://ayurvedaspa.ph/images/house-call-massage-therapist.webp");
     min-height: 650px;
   }
   .aboutLeft {

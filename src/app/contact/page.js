@@ -14,7 +14,7 @@ export default function ContactUsPage() {
       {/* Decorative Background Leaf */}
       <img 
         src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-bg.png" 
-        alt="decorative left leaf" 
+        alt="deep-tissue-massage-for-back-pain" 
         className={styles.bgLeafLeft} 
         loading="lazy" 
       />
@@ -23,8 +23,8 @@ export default function ContactUsPage() {
       <section 
         className={styles.heroSection}
         style={{
-          '--bg-desktop': "url('https://ayurvedaspa.ph/images/ayurveda-spa-massage-contact-desk-banner.webp')",
-          '--bg-mobile': "url('https://ayurvedaspa.ph/images/ayurveda-spa-massage-contact-mob-banner.webp')"
+          '--bg-desktop': "url('https://ayurvedaspa.ph/images/prenatal-massage-CDO.webp')",
+          '--bg-mobile': "url('https://ayurvedaspa.ph/images/couples-massage-Cagayan-de-Oro.webp')"
         }}
       >
         <div className={styles.heroContainer}>
@@ -38,7 +38,7 @@ export default function ContactUsPage() {
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>Contact Us</h1>
             <div className={styles.heroDivider}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-underline.png" alt="divider" />
+              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-underline.png" alt="licensed-deep-tissue-therapist-Cagayan-de-Oro" />
             </div>
             <p className={styles.heroSubtitle}>We're here to help you relax, renew & rejuvenate.</p>
           </div>
@@ -138,7 +138,7 @@ export default function ContactUsPage() {
         {/* Floating Overlay Card */}
         <div className={styles.mapOverlayCard}>
           <div className={styles.mapLogo}>
-            <img src="https://ayurvedaspa.ph/images/AYURVEDHA-MASSAGE-SPA-LOGO-001.png" alt="Ayurveda Massage & Spa Logo" />
+            <img src="https://ayurvedaspa.ph/images/reflexology-foot-treatment-near-me.png" alt="authentic-Thai-massage-CDO" />
           </div>
           
           <div className={styles.mapAddressRow}>
