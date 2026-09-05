@@ -2073,3 +2073,42 @@ a {
     height: 28px !important;
   }
 }
+
+.pre-booking-btn {
+  position: absolute;
+  bottom: 3rem;
+  left: 7rem;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  z-index: 20;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  font-family: var(--font-poppins);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.pre-booking-btn:hover {
+  transform: translateY(-2px);
+  background-color: #f0f0f0;
+}
+@media (max-width: 768px) {
+  .pre-booking-btn {
+    left: 2rem;
+    bottom: 2rem;
+  }
+}
+@media (max-width: 468px) {
+  .pre-booking-btn {
+    left: 2rem;
+    bottom: 1.5rem;
+  }
+}
+

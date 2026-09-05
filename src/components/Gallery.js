@@ -25,14 +25,13 @@ export default function Gallery() {
   }, []);
 
   const galleryImages = [
-    "https://ayurvedaspa.ph/images/deep-tissue-massage-near-me.webp",
-    "https://ayurvedaspa.ph/images/ayurvedic-massage-near-me.webp",
-    "https://ayurvedaspa.ph/images/hot-stone-massage-near-me.webp",
-    "https://ayurvedaspa.ph/images/massage-spa-near-me.webp",
-    "https://ayurvedaspa.ph/images/cdo-massage.webp",
-    "https://ayurvedaspa.ph/images/massage-in-cdo.webp",
-    "https://ayurvedaspa.ph/images/massage-spa-cdo.webp",
-
+    { src: "https://ayurvedaspa.ph/images/deep-tissue-massage-near-me.webp", alt: "authentic-Thai-massage-CDO" },
+    { src: "https://ayurvedaspa.ph/images/ayurvedic-massage-near-me.webp", alt: "traditional-Thai-spa-treatment" },
+    { src: "https://ayurvedaspa.ph/images/hot-stone-massage-near-me.webp", alt: "Thai-therapist-Cagayan-de-Oro" },
+    { src: "https://ayurvedaspa.ph/images/massage-spa-near-me.webp", alt: "oriental-massage-near-me" },
+    { src: "https://ayurvedaspa.ph/images/cdo-massage.webp", alt: "traditional-Filipino-hilot-massage" },
+    { src: "https://ayurvedaspa.ph/images/massage-in-cdo.webp", alt: "hilot-massage-CDO" },
+    { src: "https://ayurvedaspa.ph/images/massage-spa-cdo.webp", alt: "combination-Thai-Swedish-massage" },
   ];
 
   // Close modal when clicking outside or pressing Escape
@@ -88,14 +87,14 @@ export default function Gallery() {
         </div>
 
         <div className="gallery-masonry slide-up-fade-delay-2">
-          {galleryImages.map((src, idx) => (
+          {galleryImages.map((image, idx) => (
             <div 
               className="gallery-item-masonry" 
               key={idx}
-              onClick={() => setSelectedImage(src)}
+              onClick={() => setSelectedImage(image.src)}
               style={{ cursor: 'pointer' }}
             >
-              <img src={src} alt={`Spa Gallery ${idx + 1}`} loading="lazy" width="600" height="450" style={{ transition: 'transform 0.3s ease' }} onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'} onMouseLeave={(e) => e.target.style.transform = 'scale(1)'} />
+              <img src={image.src} alt={image.alt} loading="lazy" width="600" height="450" style={{ transition: 'transform 0.3s ease' }} onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'} onMouseLeave={(e) => e.target.style.transform = 'scale(1)'} />
             </div>
           ))}
         </div>

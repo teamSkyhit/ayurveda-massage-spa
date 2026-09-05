@@ -239,7 +239,7 @@ export default function Booking() {
               {status === 'Booking...' ? 'Booking...' : 'Book Online'}
             </button>
             
-            {status && (
+            {status && status !== 'Booking...' && (
               <p className={`form-status ${status.includes('success') ? 'status-success' : 'status-error'}`}>
                 {status}
               </p>

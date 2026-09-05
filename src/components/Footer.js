@@ -1,8 +1,12 @@
 import Link from 'next/link';
+import BestSpaAccordion from './BestSpaAccordion';
 
 export default function Footer() {
   return (
     <footer className="main-footer">
+      <div style={{ position: 'relative', zIndex: 10 }}>
+        <BestSpaAccordion />
+      </div>
       <div className="footer-bg-overlay">
         <img src="https://ayurvedaspa.ph/images/wellness-center-near-me.webp" alt="massage 400 cdo" className="footer-bg-flower" width="500" height="500" loading="lazy" />
       </div>

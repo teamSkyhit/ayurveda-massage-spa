@@ -93,7 +93,7 @@ export default function AboutUs() {
           
           <div className={styles.featureItem}>
             <div className={styles.featureIcon}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-ayurvedic-wisdom.png" alt="top-rated-spa-Cagayan-de-Oro" />
+              <img src="https://ayurvedaspa.ph/images/relaxation-massage-Cagayan-de-Oro.png" alt="top-rated-spa-Cagayan-de-Oro" />
             </div>
             <h3 className={styles.featureTitle}>Ayurvedic Wisdom</h3>
             <p className={styles.featureDesc}>Rooted in ancient healing practices for natural wellness.</p>
@@ -101,7 +101,7 @@ export default function AboutUs() {
           
           <div className={styles.featureItem}>
             <div className={styles.featureIcon}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-natural-safe.png" alt="massage-therapist-CDO" />
+              <img src="https://ayurvedaspa.ph/images/massage-parlor-near-CDO.png" alt="massage-therapist-CDO" />
             </div>
             <h3 className={styles.featureTitle}>Natural & Safe</h3>
             <p className={styles.featureDesc}>We use natural herbal oils that nourish and revitalize your body.</p>
@@ -109,7 +109,7 @@ export default function AboutUs() {
           
           <div className={styles.featureItem}>
             <div className={styles.featureIcon}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-professional-care.png" alt="wellness-center-near-me" />
+              <img src="https://ayurvedaspa.ph/images/top-rated-spa-Cagayan-de-Oro.png" alt="wellness-center-near-me" />
             </div>
             <h3 className={styles.featureTitle}>Professional Care</h3>
             <p className={styles.featureDesc}>Skilled and trained therapists dedicated to your comfort.</p>
@@ -117,7 +117,7 @@ export default function AboutUs() {
           
           <div className={styles.featureItem}>
             <div className={styles.featureIcon}>
-              <img src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-peaceful-space.png" alt="signature-massage-CDO" />
+              <img src="https://ayurvedaspa.ph/images/massage-therapist-CDO.png" alt="signature-massage-CDO" />
             </div>
             <h3 className={styles.featureTitle}>Peaceful Space</h3>
             <p className={styles.featureDesc}>A calm and private environment to relax, renew, and recharge.</p>
