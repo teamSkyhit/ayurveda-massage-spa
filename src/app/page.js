@@ -5,6 +5,7 @@ import ProcessSection from "../components/ProcessSection";
 import Features from "../components/Features";
 import Gallery from "../components/Gallery";
 import Booking from "../components/Booking";
+import SeoAccordion from "../components/SeoAccordion";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Features />
       <Gallery />
       <Booking />
+      <SeoAccordion />
     </div>
   );
 }

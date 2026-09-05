@@ -3,21 +3,16 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 export default function Hero() {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
 
   return (
     <section className="hero-section">
       <div className="hero-bg-overlay">
-        <img src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-flower-img.png" alt="Flower Background Overlay" className="hero-bg-flower" />
+        <img src="https://ayurvedaspa.ph/images/ayurveda-massage-flower-img.png" alt="affordable massage cdo" className="hero-bg-flower" fetchPriority="high" width="500" height="500" />
       </div>
 
       <div className="hero-container">
         {/* Left Side: Content */}
-        <div className={`hero-content ${isLoaded ? 'fade-in-up' : ''}`}>
+        <div className="hero-content fade-in-up">
           <p className="hero-subtitle">WELCOME TO AYURVEDA MASSAGE & SPA</p>
           <h1 className="hero-title">
             Massage Spa in<br />
@@ -30,10 +25,10 @@ export default function Hero() {
           </p>
           
           <div className="hero-buttons">
-            <Link href="https://wa.link/pjquhk" className="btn-primary">
+            <Link href="https://wa.me/+639638649151" className="btn-primary">
               BOOK APPOINTMENT
             </Link>
-            <Link href="#" className="btn-secondary">
+            <Link href="/massage-cagayan-de-oro" className="btn-secondary">
               EXPLORE SERVICES
             </Link>
           </div>
@@ -50,22 +45,31 @@ export default function Hero() {
         </div>
 
         {/* Right Side: Image */}
-        <div className={`hero-image-wrapper ${isLoaded ? 'fade-in-right' : ''}`}>
+        <div className="hero-image-wrapper fade-in-right">
           <img 
-            src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-corner.png" 
-            alt="Corner Decor" 
+            src="https://ayurvedaspa.ph/images/affordable-massage-cagayan-de-oro.png" 
+            alt="affordable massage cagayan de oro" 
             className="hero-corner-img" 
+            width="245" 
+            height="280" 
+            fetchPriority="high"
           />
           <img 
-            src="/hero-img.webp" 
-            alt="Relaxing Spa Massage" 
+            src="https://ayurvedaspa.ph/images/cheap-massage-cdo.webp" 
+            alt="cheap massage near me" 
             className="hero-main-img" 
+            width="450" 
+            height="528" 
+            fetchPriority="high"
           />
           
           <img 
-            src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-hero-corner.png" 
-            alt="Essential Oil Bottle" 
+            src="https://ayurvedaspa.ph/images/cheap-massage-near-me.png" 
+            alt="affordable spa cdo" 
             className="hero-bottle-img float-animation" 
+            width="250" 
+            height="211" 
+            fetchPriority="high"
           />
         </div>
       </div>

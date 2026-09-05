@@ -1,42 +1,94 @@
-import { Outfit } from "next/font/google";
+import { Outfit, Poppins } from "next/font/google";
 import localFont from "next/font/local";
+import Script from "next/script";
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
 });
 
-const saudagar = localFont({
-  src: "../fonts/Saudagar.ttf",
-  variable: "--font-saudagar",
+const poppins = Poppins({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  style: ['normal', 'italic'],
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  display: 'swap',
 });
+
 
 export const metadata = {
   title: "Massage Spa in Cagayan de Oro | Ayurveda Massage & Spa",
   description: "Relax and unwind at Ayurveda Massage & Spa in Cagayan de Oro. Enjoy Swedish, Thai, Ayurvedic, deep tissue, hot stone and more. Book today.",
   keywords: "massage spa cdo, massage spa cagayan de oro, massage in cagayan de oro, spa in cagayan de oro, ayurvedic massage cdo, thai massage cdo, swedish massage cdo, deep tissue massage cdo, hot stone massage cdo",
   icons: {
-    icon: 'https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-fav-icon.png',
+    icon: 'https://ayurvedaspa.ph/images/ayurveda-massage-spa-fav-icon.png',
+  },
+  verification: {
+    google: "DA8pRcn5hG-VsjYBHUiiYcPC-soo0AHV4lBIFhMACpg",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${outfit.variable} ${saudagar.variable}`}>
+    <html lang="en" className={`${outfit.variable} ${poppins.variable}`} suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+        {/* Google tag (gtag.js) */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-RKF067EZBY"></Script>
+        <Script
+          id="google-analytics"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-RKF067EZBY');
+            `,
+          }}
+        />
+        {/* Google tag (gtag.js) - AW-11000522977 */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11000522977"></Script>
+        <Script
+          id="google-analytics-aw"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-11000522977');
+            `,
+          }}
+        />
+        {/* Google Tag Manager */}
+        <Script
+          id="google-tag-manager"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-PGV58LRR');
+            `,
+          }}
+        />
       </head>
-      <body suppressHydrationWarning>
+      <body suppressHydrationWarning className={`${outfit.variable} ${poppins.variable}`}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PGV58LRR"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
         <Header />
         <main>{children}</main>
         <Footer />
         <a 
-          href="https://wa.link/pjquhk" 
+          href="https://wa.me/+639638649151" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="whatsapp-float"

@@ -77,7 +77,7 @@ export default function Testimonials() {
     <section className="testimonials-section" ref={sectionRef}>
       <div className="testimonials-container">
         
-        <div className={`testimonials-header-wrapper ${isVisible ? 'fade-in-up' : 'opacity-0'}`}>
+        <div className="testimonials-header-wrapper fade-in-up">
           <div className="testimonials-header-text">
             <p className="section-subtitle">GUEST EXPERIENCES</p>
             <h2 className="section-title">Words From Our Guests</h2>
@@ -96,7 +96,7 @@ export default function Testimonials() {
           </div>
         </div>
 
-        <div className={`testimonials-track-container ${isVisible ? 'slide-up-fade-delay-2' : 'opacity-0'}`}>
+        <div className="testimonials-track-container slide-up-fade-delay-2">
           <div className="testimonials-track" ref={scrollTrackRef}>
             {testimonialsData.map((testimonial, idx) => (
               <div className="testimonial-card" key={idx}>

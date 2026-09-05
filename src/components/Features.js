@@ -4,28 +4,28 @@ export default function Features() {
       title: "Personalised Care",
       desc: "Treatments centred around your comfort and preferences.",
       icon: (
-        <img src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-personalised-care.gif" alt="Personalised Care" style={{ width: '90px', height: '90px', marginBottom: '1.5rem', objectFit: 'contain' }} />
+        <img src="https://ayurvedaspa.ph/images/spa-near-me.gif" alt="thai massage near me" width="90" height="90" loading="lazy" style={{ width: '90px', height: '90px', marginBottom: '1.5rem', objectFit: 'contain' }} />
       )
     },
     {
       title: "Experienced Therapists",
       desc: "Professional service delivered with care and attention.",
       icon: (
-        <img src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-experienced-therapists.gif" alt="Experienced Therapists" style={{ width: '90px', height: '90px', marginBottom: '1.5rem', objectFit: 'contain' }} />
+        <img src="https://ayurvedaspa.ph/images/body-massage-near-me.gif" alt="thailand massage" width="90" height="90" loading="lazy" style={{ width: '90px', height: '90px', marginBottom: '1.5rem', objectFit: 'contain' }} />
       )
     },
     {
       title: "Natural Wellness Products",
       desc: "Thoughtfully selected oils and spa essentials.",
       icon: (
-        <img src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-natural-wellness-products.gif" alt="Natural Wellness Products" style={{ width: '90px', height: '90px', marginBottom: '1.5rem', objectFit: 'contain' }} />
+        <img src="https://ayurvedaspa.ph/images/thai-massage-near-me.gif" alt="thailand massage near me" width="90" height="90" loading="lazy" style={{ width: '90px', height: '90px', marginBottom: '1.5rem', objectFit: 'contain' }} />
       )
     },
     {
       title: "Calm & Hygienic Spaces",
       desc: "A peaceful environment designed for comfort and privacy.",
       icon: (
-        <img src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-calm-hygienic-spaces.gif" alt="Calm & Hygienic Spaces" style={{ width: '90px', height: '90px', marginBottom: '1.5rem', objectFit: 'contain' }} />
+        <img src="https://ayurvedaspa.ph/images/swedish-massage-near-me.gif" alt="thai spa near me" width="90" height="90" loading="lazy" style={{ width: '90px', height: '90px', marginBottom: '1.5rem', objectFit: 'contain' }} />
       )
     }
   ];

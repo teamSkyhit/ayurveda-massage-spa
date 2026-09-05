@@ -73,7 +73,7 @@ export default function About() {
   }, []);
 
   return (
-    <section className="about-section" ref={sectionRef}>
+    <section id="about-section" className="about-section" ref={sectionRef}>
       {/* Top Features Bar */}
       <div className="features-bar">
         <div className="feature-item">
@@ -115,23 +115,32 @@ export default function About() {
         <div className="about-bg-overlay">
           <img 
             ref={flowerRef}
-            src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-bg.png" 
-            alt="Decorative Flower" 
+            src="https://ayurvedaspa.ph/images/ayurveda-massage-spa-bg.png" 
+            alt="full body thai massage near me" 
             className="about-bg-flower" 
+            loading="lazy"
+            width="600"
+            height="600"
             style={{ transition: 'transform 0.1s ease-out' }}
           />
         </div>
 
         {/* Left Side: Image */}
-        <div className={`about-image-wrapper ${isVisible ? 'slide-up-fade' : 'opacity-0'}`}>
+        <div className="about-image-wrapper slide-up-fade">
           <img 
-            src="/ayurveda-massage-spa-02.webp" 
-            alt="Warm beautifully lit massage room" 
+            src="https://ayurvedaspa.ph/images/affordable-massage-cdo.webp" 
+            alt="home service massage cdo" 
             className="about-main-img" 
+            loading="lazy"
+            width="450"
+            height="528"
           />
           <img 
-            src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-about-icon.png" 
-            alt="About Ayurvedic Icon" 
+            src="https://ayurvedaspa.ph/images/ayurveda-massage-spa-about-icon.png" 
+            alt="massage home service cdo" 
+            loading="lazy"
+            width="150"
+            height="438"
             style={{
               position: 'absolute',
               top: '50%',
@@ -143,8 +152,11 @@ export default function About() {
             }}
           />
           <img 
-            src="https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-bg-stone-flower.png" 
-            alt="Stone and Flower Decor" 
+            src="https://ayurvedaspa.ph/images/ayurveda-massage-spa-bg-stone-flower.png" 
+            alt="massage at home cdo" 
+            loading="lazy"
+            width="250"
+            height="160"
             style={{
               position: 'absolute',
               bottom: '-30px',
@@ -157,7 +169,7 @@ export default function About() {
         </div>
 
         {/* Right Side: Content */}
-        <div className={`about-content ${isVisible ? 'slide-up-fade-delay' : 'opacity-0'}`}>
+        <div className="about-content slide-up-fade-delay">
           <p className="section-subtitle" style={{ color: '#c39c6b' }}>ABOUT AYURVEDA</p>
           <h2 className="section-title" style={{ fontFamily: 'var(--font-saudagar)', fontSize: '3.5rem' }}>
             Massage Treatments in Cagayan de Oro
@@ -166,14 +178,14 @@ export default function About() {
             Ayurveda began with a simple idea — that everyone deserves an hour of genuine quiet. Our rooms are warm and softly lit, our oils are chosen with care, and every session is shaped around how you'd like to feel that day. <br /> From the moment you arrive, our therapists take the time to listen. Pressure, pace and focus are adjusted to your comfort, so you can settle in, breathe slowly and leave feeling looked after.
           </p>
           
-          <Link href="https://wa.link/pjquhk" className="btn-primary" style={{ marginTop: '1rem', display: 'inline-block' }}>
+          <Link href="https://wa.me/+639638649151" className="btn-primary" style={{ marginTop: '1rem', display: 'inline-block' }}>
             More About Us
           </Link>
         </div>
       </div>
 
       {/* Counters Section */}
-      <div className={`about-counters ${isVisible ? 'slide-up-fade-delay-1' : 'opacity-0'}`}>
+      <div className="about-counters slide-up-fade-delay-1">
         <div className="counter-item">
           <h3><CountUp end={100} suffix="+" isVisible={isVisible} /></h3>
           <p>Treatments per month</p>

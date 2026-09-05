@@ -25,63 +25,81 @@ export default function Gallery() {
   }, []);
 
   const galleryImages = [
-    "https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-gallery-img-01.webp",
-    "https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-gallery-img-02.webp",
-    "https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-gallery-img-03.webp",
-    "https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-gallery-img-04.webp",
-    "https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-gallery-img-05.webp",
-    "https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-gallery-img-06.webp",
-    "https://slategrey-bee-869726.hostingersite.com/images/ayurveda-massage-spa-gallery-img-07.webp",
+    { src: "https://ayurvedaspa.ph/images/deep-tissue-massage-near-me.webp", alt: "authentic-Thai-massage-CDO" },
+    { src: "https://ayurvedaspa.ph/images/ayurvedic-massage-near-me.webp", alt: "traditional-Thai-spa-treatment" },
+    { src: "https://ayurvedaspa.ph/images/hot-stone-massage-near-me.webp", alt: "Thai-therapist-Cagayan-de-Oro" },
+    { src: "https://ayurvedaspa.ph/images/massage-spa-near-me.webp", alt: "oriental-massage-near-me" },
+    { src: "https://ayurvedaspa.ph/images/cdo-massage.webp", alt: "traditional-Filipino-hilot-massage" },
+    { src: "https://ayurvedaspa.ph/images/massage-in-cdo.webp", alt: "hilot-massage-CDO" },
+    { src: "https://ayurvedaspa.ph/images/massage-spa-cdo.webp", alt: "combination-Thai-Swedish-massage" },
   ];
 
-  // Prevent scrolling when modal is open
+  // Close modal when clicking outside or pressing Escape
   useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setSelectedImage(null);
+    };
     if (selectedImage) {
-      document.body.style.overflow = 'hidden';
+      window.addEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
     } else {
       document.body.style.overflow = 'unset';
     }
-    return () => { document.body.style.overflow = 'unset'; };
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = 'unset';
+    };
   }, [selectedImage]);
 
   return (
-    <>
-      <section className="gallery-section" ref={sectionRef}>
-        <div className="gallery-container">
-          
-          <div className={`gallery-header ${isVisible ? 'fade-in-up' : 'opacity-0'}`}>
-            <p className="section-subtitle">INSIDE AYURVEDA</p>
-            <h2 className="section-title">
-              A Space Designed to Help You Unwind
-            </h2>
-          </div>
+    <section id="gallery-section" className="gallery-section" ref={sectionRef} style={{ position: 'relative', overflow: 'hidden' }}>
+      <style dangerouslySetInnerHTML={{ __html: `
+        .gallery-bg-leaf {
+          position: absolute;
+          bottom: 0px;
+          right: -115px;
+          width: 500px;
+          height: auto;
+          z-index: 0;
+        }
+        @media (max-width: 768px) {
+          .gallery-bg-leaf {
+            width: 250px;
+            right: -60px;
+          }
+        }
+      `}} />
+      {/* Left Bottom Corner Graphic */}
+      <img 
+        src="https://ayurvedaspa.ph/images/ayurveda-spa-massage-gallery-bg.png" 
+        alt="decorative gallery background" 
+        className="gallery-bg-leaf"
+        loading="lazy" 
+      />
 
-          <div className={`gallery-masonry ${isVisible ? 'slide-up-fade-delay-2' : 'opacity-0'}`}>
-            {galleryImages.map((src, idx) => (
-              <div 
-                className="gallery-item-masonry" 
-                key={idx} 
-                onClick={() => setSelectedImage(src)}
-                style={{ cursor: 'pointer' }}
-              >
-                <img src={src} alt={`Spa Gallery ${idx + 1}`} loading="lazy" style={{ transition: 'transform 0.3s ease' }} />
-                <div className="gallery-hover-overlay" style={{
-                  position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
-                  backgroundColor: 'rgba(0,0,0,0.2)', opacity: 0, transition: 'opacity 0.3s ease',
-                  display: 'flex', justifyContent: 'center', alignItems: 'center'
-                }}>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" style={{ width: '40px', height: '40px' }}>
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    <line x1="11" y1="8" x2="11" y2="14"></line>
-                    <line x1="8" y1="11" x2="14" y2="11"></line>
-                  </svg>
-                </div>
-              </div>
-            ))}
-          </div>
+      <div className="gallery-container" style={{ position: 'relative', zIndex: 1 }}>
+        
+        <div className="gallery-header fade-in-up">
+          <p className="section-subtitle">INSIDE AYURVEDA</p>
+          <h2 className="section-title">
+            A Space Designed to Help You Unwind
+          </h2>
         </div>
-      </section>
+
+        <div className="gallery-masonry slide-up-fade-delay-2">
+          {galleryImages.map((image, idx) => (
+            <div 
+              className="gallery-item-masonry" 
+              key={idx}
+              onClick={() => setSelectedImage(image.src)}
+              style={{ cursor: 'pointer' }}
+            >
+              <img src={image.src} alt={image.alt} loading="lazy" width="600" height="450" style={{ transition: 'transform 0.3s ease' }} onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'} onMouseLeave={(e) => e.target.style.transform = 'scale(1)'} />
+            </div>
+          ))}
+        </div>
+
+      </div>
 
       {/* Lightbox Modal */}
       {selectedImage && (
@@ -94,63 +112,40 @@ export default function Gallery() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            padding: '2rem',
-            animation: 'fadeInModal 0.3s ease-out forwards'
+            padding: '2rem'
           }}
           onClick={() => setSelectedImage(null)}
         >
           <button 
-            onClick={(e) => { e.stopPropagation(); setSelectedImage(null); }}
+            onClick={() => setSelectedImage(null)}
             style={{
               position: 'absolute',
               top: '20px',
               right: '30px',
-              background: 'none',
+              background: 'transparent',
               border: 'none',
-              color: '#fff',
+              color: 'white',
+              fontSize: '3rem',
               cursor: 'pointer',
-              zIndex: 10000,
-              padding: '10px'
+              zIndex: 10000
             }}
-            aria-label="Close modal"
           >
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '40px', height: '40px' }}>
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
+            &times;
           </button>
           <img 
             src={selectedImage} 
-            alt="Full size gallery view" 
+            alt="400 peso massage cdo" 
             style={{
-              maxHeight: '90vh',
-              maxWidth: '90vw',
+              maxWidth: '100%',
+              maxHeight: '100%',
               objectFit: 'contain',
               borderRadius: '8px',
-              boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
-              animation: 'zoomInImage 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards'
-            }}
-            onClick={(e) => e.stopPropagation()} 
+              boxShadow: '0 10px 30px rgba(0,0,0,0.5)'
+            }} 
+            onClick={(e) => e.stopPropagation()}
           />
         </div>
       )}
-
-      <style dangerouslySetInnerHTML={{__html: `
-        .gallery-item-masonry:hover img {
-          transform: scale(1.05);
-        }
-        .gallery-item-masonry:hover .gallery-hover-overlay {
-          opacity: 1 !important;
-        }
-        @keyframes fadeInModal {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-        @keyframes zoomInImage {
-          from { transform: scale(0.9); opacity: 0; }
-          to { transform: scale(1); opacity: 1; }
-        }
-      `}} />
-    </>
+    </section>
   );
 }
